@@ -2,15 +2,16 @@ import os
 import json
 import requests
 import datetime
-import google.generativeai as genai
+# 【關鍵修改點】使用最新版 Google GenAI 套件載入語法
+from google import genai
 
 # 從環境變數讀取 API Key (GitHub Secrets)
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise ValueError("找不到 GEMINI_API_KEY 環境變數！")
 
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+# 【關鍵修改點】使用新版的 Client 初始化方式
+client = genai.Client(api_key=GEMINI_API_KEY)
 
 def fetch_latest_pubmed(keyword="GELITA collagen OR bioactive collagen peptides", max_results=1):
     print(f"正在 PubMed 搜尋關鍵字: {keyword}")
@@ -69,8 +70,12 @@ def generate_summary_with_gemini(paper_info):
     }}
     """
     
-    response = model.generate_content(prompt)
     try:
+        # 【關鍵修改點】使用新版 SDK 的生成語法
+        response = client.models.generate_content(
+            model='gemini-1.5-flash',
+            contents=prompt
+        )
         clean_json = response.text.replace("```json", "").replace("```", "").strip()
         return json.loads(clean_json)
     except Exception as e:
@@ -107,16 +112,4 @@ def main():
         "brand": ai_analysis.get('brand', 'GELITA'),
         "tags": ai_analysis.get('tags', []),
         "summary": ai_analysis.get('summary', ''),
-        "pubmedUrl": latest_paper['pubmedUrl']
-    }
-
-    db['papers'].insert(0, new_entry)
-    db['lastUpdated'] = datetime.datetime.now().strftime("%Y-%m-%d")
-
-    with open('data.json', 'w', encoding='utf-8') as f:
-        json.dump(db, f, ensure_ascii=False, indent=2)
-    
-    print(f"成功寫入 {new_entry['id']}！")
-
-if __name__ == "__main__":
-    main()
+        "pubmed
