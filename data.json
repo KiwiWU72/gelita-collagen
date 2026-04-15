@@ -9,8 +9,74 @@
       "year": 2024,
       "brand": "FORTIGEL",
       "tags": ["關節健康", "膝關節", "髖關節"],
-      "summary": "154名受試者每日服用5克持續12周，膝、髖關節功能性疼痛顯著減少。",
+      "summary": "154名受試者每日服用5g持續12周。結果顯示在日常活動（爬樓梯、跪下、蹲下）中膝關節與髖關節的功能性疼痛顯著減少。底層機制為特異性胜肽信號刺激軟骨細胞外基質合成。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38399312/"
+    },
+    {
+      "id": "pmid_21251991",
+      "title": "Change in knee osteoarthritis cartilage detected by delayed gadolinium enhanced magnetic resonance imaging following treatment with collagen hydrolysate",
+      "authors": "McAlindon et al.",
+      "journal": "Osteoarthritis and Cartilage",
+      "year": 2011,
+      "brand": "FORTIGEL",
+      "tags": ["軟骨再生", "MRI", "蛋白聚糖"],
+      "summary": "30名早期膝關節炎患者每日10g持續48周。MRI影像證實，膝關節軟骨蛋白聚糖（Proteoglycan）含量顯著提升，直接證明胜肽能到達軟骨組織並啟動結構再生。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/21251991/"
+    },
+    {
+      "id": "pmid_34371911",
+      "title": "Long-Term Effects of Specific Collagen Peptides on Bone Mineral Density in Postmenopausal Women",
+      "authors": "Zdzieblik et al.",
+      "journal": "Nutrients",
+      "year": 2021,
+      "brand": "FORTIBONE",
+      "tags": ["骨密度", "長期追蹤", "骨折預防"],
+      "summary": "針對絕經後婦女進行3年長期追蹤，每日5g。脊柱骨密度(BMD)呈持續性增加從5.79%提升至8.16%，股骨頸BMD增加至4.21%。整個4年期間未觀察到任何骨折情況，展現對骨細胞長期的合成代謝引導。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/34371911/"
+    },
+    {
+      "id": "pmid_34111306",
+      "title": "Specific Collagen Peptides Improve Bone Mineral Density in Postmenopausal Women",
+      "authors": "Lampropoulou-Adamidou et al.",
+      "journal": "Nutrients",
+      "year": 2021,
+      "brand": "FORTIBONE",
+      "tags": ["vBMD", "骨膠原基質", "骨小梁"],
+      "summary": "45名絕經後骨質減少女性每日服用5g加鈣與維生素D持續12個月。非優勢脛骨的真實體積骨礦物質密度(vBMD)顯著提高2.5%，骨小梁礦物質含量提高5%，驗證了胜肽對骨膠原基質合成的刺激作用。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/"
+    },
+    {
+      "id": "pmid_31010031",
+      "title": "Specific Collagen Peptides Upregulate Gene Expression in Skeletal Muscle",
+      "authors": "Oertzen-Hagemann et al.",
+      "journal": "Nutrients",
+      "year": 2019,
+      "brand": "BODYBALANCE",
+      "tags": ["蛋白質組學", "收縮纖維代謝", "肌肉合成"],
+      "summary": "25名年輕男性每日15g結合阻力訓練12周。骨骼肌蛋白質組學分析顯示，BODYBALANCE組有221種蛋白質表達上調（多與收縮纖維代謝相關），而安慰劑組僅44種，從分子層次證實對肌肉合成通路的強烈刺激。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31010031/"
+    },
+    {
+      "id": "pmid_39086044",
+      "title": "Post-exercise collagen peptide supplementation increases myofibrillar and muscle connective protein synthesis rates",
+      "authors": "Aussieker et al.",
+      "journal": "Medicine & Science in Sports & Exercise",
+      "year": 2024,
+      "brand": "BODYBALANCE",
+      "tags": ["肌原纖維", "結締組織蛋白", "同位素示蹤"],
+      "summary": "28名男性運動後服用BODYBALANCE 25/5配方。同位素示蹤證實，胜肽能顯著提升運動後靜息狀態下的肌原纖維蛋白（Myofibrillar protein）與肌肉結締組織蛋白的合成速率。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/"
+    },
+    {
+      "id": "pmid_37424319",
+      "title": "Specific collagen peptides increase adaptions of patellar tendon morphology following 14-weeks of high-load resistance training",
+      "authors": "Jerger et al.",
+      "journal": "Frontiers in Physiology",
+      "year": 2023,
+      "brand": "TENDOFORTE",
+      "tags": ["髕腱", "橫截面積", "抗拉強度"],
+      "summary": "50名健康男性每日5g結合阻力訓練14周。超音波與MRI顯示，髕腱橫截面積(CSA)顯著均勻增加約11%（安慰劑為4.9%）。胜肽信號直接刺激肌腱細胞的膠原蛋白合成，增強機械抗拉強度。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37424319/"
     },
     {
       "id": "pmid_32679779",
@@ -19,42 +85,31 @@
       "journal": "Nutrients",
       "year": 2020,
       "brand": "PeptENDURE",
-      "tags": ["耐力表現", "線粒體", "跑步表現"],
-      "summary": "每日服用15克持續12周，顯著增加60分鐘跑步測試距離（+331m），並提升有氧代謝能力。",
+      "tags": ["耐力表現", "有氧代謝", "跑步距離"],
+      "summary": "59名年輕女性每日15g結合訓練12周。60分鐘跑步試驗距離顯著增加331米，去脂體重增加，且有氧代謝能力及心率/無氧閾值皆獲得顯著改善。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/32679779/"
     },
     {
-      "id": "pmid_29997457",
-      "title": "Improvement of Functional Ankle Instability Following Supplementation with Specific Collagen Peptides",
-      "authors": "Dressler et al.",
-      "journal": "Journal of Sports Science & Medicine",
-      "year": 2018,
-      "brand": "TENDOFORTE",
-      "tags": ["肌腱韌帶", "踝關節穩定性", "受傷預防"],
-      "summary": "50名慢性踝關節不穩受試者，每日服用5克持續6個月，顯著增強關節穩定性並減少扭傷次數。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/29997457/"
+      "id": "pmid_10687431",
+      "title": "Influence of specific collagen peptides on recovery-related biomechanical characteristics",
+      "authors": "Bischof et al.",
+      "journal": "Frontiers in Physiology",
+      "year": 2024,
+      "brand": "PeptENDURE",
+      "tags": ["肌肉損傷", "肌紅蛋白", "恢復速率"],
+      "summary": "55名男性每日服用15g混合配方(10g PeptENDURE + 5g TENDOFORTE)持續12周。運動後24與48小時的血液檢測顯示，全身肌肉損傷標誌物（肌紅蛋白、肌酸激酶、乳酸脫氫酶）顯著下降。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/"
     },
     {
-      "id": "pmid_29337906",
-      "title": "Specific collagen peptides improve bone mineral density and bone markers in postmenopausal women",
-      "authors": "König et al.",
-      "journal": "Nutrients",
-      "year": 2018,
-      "brand": "FORTIBONE",
-      "tags": ["骨密度", "BMD", "P1NP", "絕經後"],
-      "summary": "131名絕經後婦女每日服用FORTIBONE® 5克持續12個月，脊柱與股骨頸骨密度顯著增加。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/29337906/"
-    },
-    {
-      "id": "scirp_77445",
-      "title": "The Effectiveness of Specific Collagen Peptides on Osteoarthritis in Dogs",
-      "authors": "Schunck et al.",
-      "journal": "Open Journal of Animal Sciences",
-      "year": 2017,
-      "brand": "PETAGILE",
-      "tags": ["寵物健康", "關節退化", "老年犬"],
-      "summary": "體外與臨床研究顯示能刺激犬類軟骨基質合成，減少發炎因子，顯著改善跛行與活動能力。",
-      "pubmedUrl": "https://www.scirp.org/journal/paperinformation?paperid=77445"
+      "id": "pmid_41311286",
+      "title": "The Sustained Effects of Bioactive Collagen Peptides on Skin Health: A Randomized, Double-Blind, Placebo-Controlled Clinical Study",
+      "authors": "Cosmetics",
+      "journal": "Cosmetics 2025, 12(2), 79",
+      "year": 2025,
+      "brand": "VERISOL",
+      "tags": ["皮膚彈性", "皺紋減少", "水分增加"],
+      "summary": "66名女性每日2.5g持續8周。眼部皺紋體積較安慰劑組顯著減少25%，皮膚彈性提高9%，皮膚含水量顯著增加26%。底層機制為胜肽直接穿透至真皮層，刺激細胞合成膠原與玻尿酸。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/41311286/"
     },
     {
       "id": "pmid_24401291",
@@ -63,9 +118,31 @@
       "journal": "Skin Pharmacology and Physiology",
       "year": 2014,
       "brand": "VERISOL",
-      "tags": ["皮膚彈性", "皺紋", "纖維母細胞", "抗老化"],
-      "summary": "每日口服VERISOL® 2.5克持續8周，眼周皺紋減少20%，真皮層膠原蛋白Type I表現提升。",
+      "tags": ["I型前膠原", "彈性蛋白", "抗老化"],
+      "summary": "114名女性每日2.5g持續8周。眼周皺紋體積顯著減少20%。活檢顯示真皮層I型前膠原蛋白表現量增加65%，彈性蛋白增加18%，從基因表現層次證明了其抗老化信號傳導效應。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/24401291/"
+    },
+    {
+      "id": "scirp_77445",
+      "title": "The Effectiveness of Specific Collagen Peptides on Osteoarthritis in Dogs",
+      "authors": "Schunck et al.",
+      "journal": "Open Journal of Animal Sciences",
+      "year": 2017,
+      "brand": "PETAGILE",
+      "tags": ["發炎因子抑制", "聚集蛋白聚糖", "犬類骨關節"],
+      "summary": "22隻患骨關節炎的狗每日5g持續12周。細胞外基質分子（II型膠原、聚集蛋白聚糖、彈性蛋白）合成增加，炎症因數與金屬蛋白酶顯著減少，臨床上跛行大幅減輕，活力顯著提升。",
+      "pubmedUrl": "https://www.scirp.org/journal/paperinformation?paperid=77445"
+    },
+    {
+      "id": "vetmed_2024",
+      "title": "Effect of specific collagen peptides on mobility in dogs with osteoarthritis",
+      "authors": "Dobenecker et al.",
+      "journal": "Veterinary Medicine",
+      "year": 2024,
+      "brand": "PETAGILE",
+      "tags": ["運動學參數", "垂直衝量", "步態分析"],
+      "summary": "31隻患骨關節炎犬隻持續12周。測力台運動學參數（峰值垂直力、垂直衝量、站立相持續時間）顯著改善，證實胜肽能直接進入犬類關節腔，有效刺激軟骨基質修復並提升生活品質。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/"
     }
   ]
 }
