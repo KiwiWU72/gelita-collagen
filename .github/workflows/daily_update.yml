@@ -1,31 +1,38 @@
-name: Daily GELITA Paper Update
+name: PubMed to Gemini Daily Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天午夜 00:00 (UTC) 執行
-  workflow_dispatch: # 允許你隨時手動點擊按鈕執行
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
-  update-data:
+  update-papers:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # 解決 403 錯誤，允許機器人推播更新
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Run Gemini Update Script
-        run: python update_papers.py
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-generativeai
+
+      - name: Run Update Script
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} # 你的安全金鑰
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python update_papers.py
 
       - name: Commit and Push Changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
           git add data.json
-          git commit -m "Auto-update latest papers via Gemini" || echo "No changes to commit"
-          git push
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 自動更新：新增 PubMed 文獻與 Gemini 分析" && git push)
