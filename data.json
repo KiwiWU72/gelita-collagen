@@ -76,7 +76,7 @@
       "brand": "VERISOL",
       "tags": ["皺紋−25%", "皮膚彈性", "皮膚水分+26%", "2025最新"],
       "summary": "66名35至55歲高加索女性每天服用2.5克牛源性SCPs持續8周。8周後眼周皺紋體積比安慰劑組顯著減少25%，皮膚彈性比安慰劑組提高9%，皮膚水分含量增加26%。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/41311286/"
+      "pubmedUrl": "https://doi.org/10.3390/cosmetics12020079"
     },
     {
       "id": "clark2008",
@@ -120,7 +120,7 @@
       "brand": "FORTIGEL",
       "tags": ["OCL", "骨軟骨病變", "MRI", "運動員復出"],
       "summary": "3名成年男性（30歲、42歲和43歲），每日10克持續3至16個月。MRI記錄骨軟骨病變的改善或穩定、關節面恢復，實現功能恢復和完全恢復比賽水準。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/"
+      "pubmedUrl": "https://scholar.google.com/scholar?q=MRI-Documented+Improvement+in+Osteochondral+Lesions+Following+Collagen+Peptide+Supplementation"
     },
     {
       "id": "zdzieblik2021_joint",
@@ -134,15 +134,15 @@
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/33423023/"
     },
     {
-      "id": "schulze2024",
-      "title": "Specific Collagen Peptide Supplementation Reduces Functional Joint Pain in Knee and Hip",
+      "id": "pmid_38928934",
+      "title": "Impact of Specific Bioactive Collagen Peptides on Joint Discomforts in the Lower Extremity during Daily Activities: A Randomized Controlled Trial",
       "authors": "Schulze et al.",
-      "journal": "Nutrients",
+      "journal": "International Journal of Environmental Research and Public Health",
       "year": 2024,
       "brand": "FORTIGEL",
-      "tags": ["功能性疼痛", "膝關節", "髖關節", "日常活動"],
-      "summary": "154名男女（平均年齡50歲），每天5克持續12周。正常日常活動中膝關節和髖關節功能性疼痛顯著減少，醫師評估休息時疼痛和行走時疼痛均下降，受試者報告爬樓梯、跪下、蹲下時疼痛顯著減少。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38399312/"
+      "tags": ["功能性疼痛", "膝關節", "髖關節"],
+      "summary": "154名受試者每日服用5g持續12周。結果顯示在日常活動（爬樓梯、跪下、蹲下）中膝關節與髖關節的功能性疼痛顯著減少。底層機制為特異性胜肽信號刺激軟骨細胞外基質合成。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38928934/"
     },
     {
       "id": "konig2018",
@@ -175,7 +175,7 @@
       "brand": "FORTIBONE",
       "tags": ["骨轉換標誌物", "鈣", "維生素D", "骨質流失"],
       "summary": "51名絕經後骨質減少婦女（平均年齡62歲），每天5克+500毫克鈣+400IU維生素D持續3個月。與單獨鈣+維生素D相比，FORTIBONE®顯著改善骨轉換標誌物，表明骨質流失顯著減少。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/"
+      "pubmedUrl": "https://scholar.google.com/scholar?q=Effect+of+Specific+Collagen+Peptides+Combined+with+Calcium+and+Vitamin+D+on+Bone+Turnover+Markers"
     },
     {
       "id": "zdzieblik2021_bone",
@@ -266,15 +266,15 @@
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37571340/"
     },
     {
-      "id": "aussieker2024",
-      "title": "Leucine-Enriched Whey and BODYBALANCE Blend Promotes Superior Amino Acid and Myofibrillar Protein Synthesis",
+      "id": "pmid_39501478",
+      "title": "Ingestion of a Whey Plus Collagen Protein Blend Increases Myofibrillar and Muscle Connective Protein Synthesis Rates",
       "authors": "Aussieker et al.",
       "journal": "Medicine & Science in Sports & Exercise",
       "year": 2024,
       "brand": "BODYBALANCE",
-      "tags": ["EAA必需氨基酸", "甘氨酸", "肌原纖維蛋白", "混合配方"],
-      "summary": "乳清蛋白與BODYBALANCE 25/5克混合配方，對於運動後必需氨基酸（EAA）和甘氨酸的供應具顯著優勢；促進靜息狀態下肌原纖維蛋白和肌肉結締組織蛋白質合成速率顯著提升。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/39086044/"
+      "tags": ["肌原纖維", "結締組織蛋白", "同位素示蹤"],
+      "summary": "28名男性運動後服用BODYBALANCE 25/5配方。同位素示蹤證實，胜肽能顯著提升運動後靜息狀態下的肌原纖維蛋白（Myofibrillar protein）與肌肉結締組織蛋白的合成速率。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/39501478/"
     },
     {
       "id": "dressler2018",
