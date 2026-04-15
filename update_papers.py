@@ -70,15 +70,16 @@ def generate_summary_with_gemini(paper_info):
     """
     
     try:
-        # 使用新版 SDK 的生成語法
+        # 【修正1】將模型升級為最新的 gemini-2.0-flash
         response = client.models.generate_content(
-            model='gemini-1.5-flash',
+            model='gemini-2.0-flash',
             contents=prompt
         )
         clean_json = response.text.replace("```json", "").replace("```", "").strip()
         return json.loads(clean_json)
     except Exception as e:
-        print(f"JSON 解析失敗: {e}\n模型輸出: {response.text}")
+        # 【修正2】移除 response.text，避免發生 UnboundLocalError 崩潰
+        print(f"呼叫 Gemini 或解析 JSON 時發生錯誤: {e}")
         return None
 
 def main():
