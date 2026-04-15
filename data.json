@@ -8,11 +8,7 @@
       "journal": "Nutrients",
       "year": 2024,
       "brand": "FORTIGEL",
-      "tags": [
-        "關節健康",
-        "膝關節",
-        "髖關節"
-      ],
+      "tags": ["關節健康", "膝關節", "髖關節"],
       "summary": "154名受試者每日服用5克持續12周，膝、髖關節功能性疼痛顯著減少。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38399312/"
     },
@@ -23,11 +19,7 @@
       "journal": "Nutrients",
       "year": 2020,
       "brand": "PeptENDURE",
-      "tags": [
-        "耐力表現",
-        "線粒體",
-        "跑步表現"
-      ],
+      "tags": ["耐力表現", "線粒體", "跑步表現"],
       "summary": "每日服用15克持續12周，顯著增加60分鐘跑步測試距離（+331m），並提升有氧代謝能力。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/32679779/"
     },
@@ -38,11 +30,7 @@
       "journal": "Journal of Sports Science & Medicine",
       "year": 2018,
       "brand": "TENDOFORTE",
-      "tags": [
-        "肌腱韌帶",
-        "踝關節穩定性",
-        "受傷預防"
-      ],
+      "tags": ["肌腱韌帶", "踝關節穩定性", "受傷預防"],
       "summary": "50名慢性踝關節不穩受試者，每日服用5克持續6個月，顯著增強關節穩定性並減少扭傷次數。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/29997457/"
     },
@@ -53,12 +41,7 @@
       "journal": "Nutrients",
       "year": 2018,
       "brand": "FORTIBONE",
-      "tags": [
-        "骨密度",
-        "BMD",
-        "P1NP",
-        "絕經後"
-      ],
+      "tags": ["骨密度", "BMD", "P1NP", "絕經後"],
       "summary": "131名絕經後婦女每日服用FORTIBONE® 5克持續12個月，脊柱與股骨頸骨密度顯著增加。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/29337906/"
     },
@@ -69,11 +52,7 @@
       "journal": "Open Journal of Animal Sciences",
       "year": 2017,
       "brand": "PETAGILE",
-      "tags": [
-        "寵物健康",
-        "關節退化",
-        "老年犬"
-      ],
+      "tags": ["寵物健康", "關節退化", "老年犬"],
       "summary": "體外與臨床研究顯示能刺激犬類軟骨基質合成，減少發炎因子，顯著改善跛行與活動能力。",
       "pubmedUrl": "https://www.scirp.org/journal/paperinformation?paperid=77445"
     },
@@ -84,12 +63,7 @@
       "journal": "Skin Pharmacology and Physiology",
       "year": 2014,
       "brand": "VERISOL",
-      "tags": [
-        "皮膚彈性",
-        "皺紋",
-        "纖維母細胞",
-        "抗老化"
-      ],
+      "tags": ["皮膚彈性", "皺紋", "纖維母細胞", "抗老化"],
       "summary": "每日口服VERISOL® 2.5克持續8周，眼周皺紋減少20%，真皮層膠原蛋白Type I表現提升。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/24401291/"
     }
