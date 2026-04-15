@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GELITA® BCP® 生物活性膠原蛋白肽 | 科學數據中心</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:   #0b1f3a;
+      --navy2:  #122d54;
+      --gold:   #c8952a;
+      --gold2:  #e0aa44;
+      --white:  #ffffff;
+      --offwhite: #f4f7fb;
+      --text:   #1a2a42;
+      --muted:  #6b7a99;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', 'Noto Sans TC', sans-serif;
+      background: var(--offwhite);
+      color: var(--text);
+    }
+
+    /* ─── Scrollbar ─── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #e8edf5; }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+    /* ─── NAV ─── */
+    .nav-bar {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+      position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.35);
+    }
+    .nav-logo { height: 36px; }
+    .nav-link {
+      color: rgba(255,255,255,0.72);
+      font-size: 0.78rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 0.3rem 0.6rem;
+      border-radius: 4px; transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .nav-link:hover { color: var(--gold2); background: rgba(255,255,255,0.07); }
+    .nav-link.active { color: var(--gold2); border-bottom: 2px solid var(--gold2); }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: linear-gradient(160deg, var(--navy) 0%, #1a3d6e 55%, #0e2a4d 100%);
+      min-height: 92vh;
+      display: flex; align-items: center;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 80% 40%, rgba(200,149,42,0.12) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 20% 70%, rgba(30,80,140,0.3) 0%, transparent 60%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image:
+        linear-gradient(rgba(255,255,255,1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: rgba(200,149,42,0.18); border: 1px solid rgba(200,149,42,0.4);
+      color: var(--gold2); font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.35rem 0.9rem; border-radius: 20px; margin-bottom: 1.2rem;
+    }
+    .hero-title {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 800; color: #fff; line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .hero-title span { color: var(--gold2); }
+    .hero-sub {
+      color: rgba(255,255,255,0.68); font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+      line-height: 1.7; max-width: 560px;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 100%);
+      color: var(--navy); font-weight: 700; font-size: 0.88rem;
+      padding: 0.75rem 1.8rem; border-radius: 8px;
+      letter-spacing: 0.03em; transition: all 0.25s;
+      border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,149,42,0.45); }
+    .btn-outline {
+      background: transparent; color: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.3); font-weight: 500; font-size: 0.88rem;
+      padding: 0.75rem 1.8rem; border-radius: 8px;
+      transition: all 0.25s; cursor: pointer;
+    }
+    .btn-outline:hover { border-color: var(--gold2); color: var(--gold2); background: rgba(200,149,42,0.07); }
+
+    /* BCP pills */
+    .bcp-pill {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 8px; padding: 0.6rem 1rem;
+      color: rgba(255,255,255,0.82); font-size: 0.82rem;
+    }
+    .bcp-pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold2); flex-shrink: 0; }
+
+    /* ─── SECTION ─── */
+    .section-label {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800;
+      color: var(--navy); line-height: 1.2;
+    }
+
+    /* ─── STATS BAR ─── */
+    .stats-bar {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+    }
+    .stat-item { text-align: center; padding: 1.2rem; }
+    .stat-num {
+      font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800;
+      color: var(--gold2); line-height: 1;
+    }
+    .stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.6); margin-top: 0.3rem; letter-spacing: 0.04em; }
+
+    /* ─── MECHANISM ─── */
+    .mech-card {
+      background: #fff; border-radius: 12px;
+      border: 1px solid #e0e8f4;
+      padding: 1.4rem; transition: all 0.25s;
+    }
+    .mech-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(11,31,58,0.1); }
+    .mech-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--navy) 0%, #1e3d6e 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; margin-bottom: 0.9rem;
+    }
+
+    /* ─── BRAND CARDS ─── */
+    .brand-card {
+      background: #fff; border-radius: 16px;
+      border: 1px solid #dce6f5;
+      overflow: hidden; transition: all 0.3s;
+      display: flex; flex-direction: column;
+    }
+    .brand-card:hover { transform: translateY(-5px); box-shadow: 0 16px 48px rgba(11,31,58,0.14); }
+    .card-header {
+      padding: 1.4rem 1.4rem 1rem;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+      position: relative; overflow: hidden;
+    }
+    .card-header::after {
+      content: '';
+      position: absolute; bottom: -1px; left: 0; right: 0; height: 3px;
+    }
+    .brand-tag {
+      display: inline-block; font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 0.2rem 0.6rem; border-radius: 4px;
+      background: rgba(200,149,42,0.25); color: var(--gold2);
+      border: 1px solid rgba(200,149,42,0.35);
+      margin-bottom: 0.5rem;
+    }
+    .brand-name {
+      font-size: 1.6rem; font-weight: 800; color: #fff;
+      letter-spacing: -0.02em;
+    }
+    .brand-name span { color: var(--gold2); }
+    .card-body { padding: 1.3rem; flex: 1; display: flex; flex-direction: column; gap: 0.9rem; }
+    .target-tissue {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.82rem; color: var(--muted);
+    }
+    .target-tissue strong { color: var(--text); }
+    .mechanism-text {
+      font-size: 0.83rem; color: var(--muted); line-height: 1.6;
+      border-left: 3px solid var(--gold2); padding-left: 0.75rem;
+    }
+    .kpi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+    .kpi-box {
+      background: var(--offwhite); border-radius: 8px;
+      padding: 0.7rem 0.8rem; border: 1px solid #e0e8f4;
+    }
+    .kpi-value {
+      font-size: 1.3rem; font-weight: 800; color: var(--navy);
+      line-height: 1;
+    }
+    .kpi-value.gold { color: var(--gold); }
+    .kpi-label { font-size: 0.68rem; color: var(--muted); margin-top: 0.2rem; line-height: 1.4; }
+    .card-footer {
+      padding: 0.9rem 1.3rem;
+      border-top: 1px solid #e8eef8;
+      background: #f8fafd;
+    }
+    .dosage-badge {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.72rem; font-weight: 600; color: var(--navy2);
+      background: rgba(18,45,84,0.08); padding: 0.3rem 0.7rem;
+      border-radius: 20px;
+    }
+
+    /* ─── RESEARCH SECTION ─── */
+    .research-section { background: var(--navy); }
+    .paper-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px; padding: 1.3rem;
+      transition: all 0.25s; cursor: pointer;
+    }
+    .paper-card:hover {
+      background: rgba(255,255,255,0.09);
+      border-color: rgba(200,149,42,0.45);
+      transform: translateX(4px);
+    }
+    .paper-brand-tag {
+      display: inline-block; font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.2rem 0.55rem; border-radius: 4px; margin-bottom: 0.6rem;
+    }
+    .paper-title { font-size: 0.92rem; font-weight: 600; color: #fff; line-height: 1.5; margin-bottom: 0.5rem; }
+    .paper-meta { font-size: 0.75rem; color: rgba(255,255,255,0.45); margin-bottom: 0.7rem; }
+    .paper-summary { font-size: 0.8rem; color: rgba(255,255,255,0.65); line-height: 1.6; }
+    .paper-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem; }
+    .paper-tag {
+      font-size: 0.65rem; background: rgba(200,149,42,0.15);
+      border: 1px solid rgba(200,149,42,0.3); color: var(--gold2);
+      padding: 0.2rem 0.5rem; border-radius: 4px;
+    }
+    .read-btn {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.75rem; font-weight: 600; color: var(--gold2);
+      margin-top: 0.9rem; padding: 0.4rem 0.9rem;
+      border: 1px solid rgba(200,149,42,0.4); border-radius: 6px;
+      background: rgba(200,149,42,0.08); transition: all 0.2s;
+      text-decoration: none;
+    }
+    .read-btn:hover { background: rgba(200,149,42,0.2); border-color: var(--gold2); }
+    .loading-pulse {
+      background: rgba(255,255,255,0.07); border-radius: 12px;
+      padding: 1.3rem; animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.45} }
+
+    /* ─── BRAND COLOR MAP ─── */
+    .tag-VERISOL    { background: rgba(156,39,176,0.2); border-color: rgba(156,39,176,0.4); color: #ce93d8; }
+    .tag-FORTIGEL   { background: rgba(2,136,209,0.2); border-color: rgba(2,136,209,0.4); color: #81d4fa; }
+    .tag-BODYBALANCE{ background: rgba(46,125,50,0.2); border-color: rgba(46,125,50,0.4); color: #a5d6a7; }
+    .tag-FORTIBONE  { background: rgba(230,81,0,0.2); border-color: rgba(230,81,0,0.4); color: #ffcc80; }
+    .tag-TENDOFORTE { background: rgba(0,96,100,0.2); border-color: rgba(0,96,100,0.4); color: #80deea; }
+    .tag-PeptENDURE { background: rgba(74,20,140,0.2); border-color: rgba(74,20,140,0.4); color: #ce93d8; }
+
+    /* ─── FOOTER ─── */
+    footer { background: #07131f; }
+
+    /* ─── MOBILE ─── */
+    @media (max-width: 768px) {
+      .hero { min-height: 100vh; padding-top: 2rem; }
+      .hero-actions { flex-direction: column; }
+      .bcp-features { grid-template-columns: 1fr; }
+    }
+
+    /* ─── ANIMATIONS ─── */
+    .fade-up {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════ -->
+<nav class="nav-bar">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <div class="flex flex-col leading-none">
+          <span style="font-size:1.5rem;font-weight:900;color:#fff;letter-spacing:-0.04em;">GELITA</span>
+          <span style="font-size:0.55rem;color:var(--gold2);letter-spacing:0.18em;text-transform:uppercase;">Improving Quality of Life</span>
+        </div>
+        <div style="width:1px;height:28px;background:rgba(255,255,255,0.18);margin:0 0.6rem;"></div>
+        <span style="font-size:0.68rem;color:rgba(255,255,255,0.5);letter-spacing:0.06em;text-transform:uppercase;">科學數據中心</span>
+      </div>
+      <!-- Nav links -->
+      <div class="hidden lg:flex items-center gap-1">
+        <a href="#brands" class="nav-link active">品牌系列</a>
+        <a href="#mechanism" class="nav-link">作用機制</a>
+        <a href="#research" class="nav-link">最新研究</a>
+        <span style="width:1px;height:18px;background:rgba(255,255,255,0.15);margin:0 0.3rem;"></span>
+        <a href="#verisol"    class="nav-link" style="color:rgba(206,147,216,0.85);">VERISOL®</a>
+        <a href="#fortigel"   class="nav-link" style="color:rgba(129,212,250,0.85);">FORTIGEL®</a>
+        <a href="#bodybalance"class="nav-link" style="color:rgba(165,214,167,0.85);">BODYBALANCE®</a>
+        <a href="#fortibone"  class="nav-link" style="color:rgba(255,204,128,0.85);">FORTIBONE®</a>
+        <a href="#tendoforte" class="nav-link" style="color:rgba(128,222,234,0.85);">TENDOFORTE®</a>
+        <a href="#peptendure" class="nav-link" style="color:rgba(206,147,216,0.7);">PeptENDURE®</a>
+      </div>
+      <!-- Mobile menu btn -->
+      <button id="menuBtn" class="lg:hidden text-white p-2 rounded-md">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden pb-3 flex-wrap gap-2">
+      <a href="#brands" class="nav-link">品牌</a>
+      <a href="#mechanism" class="nav-link">機制</a>
+      <a href="#research" class="nav-link">研究</a>
+      <a href="#verisol" class="nav-link">VERISOL</a>
+      <a href="#fortigel" class="nav-link">FORTIGEL</a>
+      <a href="#bodybalance" class="nav-link">BODYBALANCE</a>
+      <a href="#fortibone" class="nav-link">FORTIBONE</a>
+      <a href="#tendoforte" class="nav-link">TENDOFORTE</a>
+      <a href="#peptendure" class="nav-link">PeptENDURE</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-20 lg:py-0">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left -->
+      <div>
+        <div class="hero-badge">
+          <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          全球膠原蛋白科學領導品牌 · 1895年創立於德國
+        </div>
+        <h1 class="hero-title mb-5">
+          BCP<span>®</span> 生物活性<br/>膠原蛋白肽<br/>
+          <span style="font-size:0.55em;font-weight:400;color:rgba(255,255,255,0.55);">Bioactive Collagen Peptides</span>
+        </h1>
+        <p class="hero-sub mb-8">
+          GELITA® 透過<strong style="color:rgba(255,255,255,0.9);">專利酵素水解技術</strong>，將天然膠原蛋白精準切割為具特定序列的生物活性胜肽。這些小分子胜肽能直接作用於目標組織——
+          刺激纖維母細胞、軟骨細胞、骨芽細胞的信號傳導，由內而外重建人體結締組織。
+        </p>
+        <div class="flex flex-wrap gap-3 hero-actions mb-10">
+          <a href="#research" class="btn-primary">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+            查看最新文獻
+          </a>
+          <a href="#brands" class="btn-outline">探索六大系列 →</a>
+        </div>
+
+        <!-- BCP mechanism pills -->
+        <div class="grid grid-cols-2 gap-2 bcp-features">
+          <div class="bcp-pill"><span class="dot"></span>酵素水解專利技術</div>
+          <div class="bcp-pill"><span class="dot"></span>特定序列胜肽組合</div>
+          <div class="bcp-pill"><span class="dot"></span>組織特異性訊號傳導</div>
+          <div class="bcp-pill"><span class="dot"></span>超過 40 項臨床研究</div>
+        </div>
+      </div>
+
+      <!-- Right — molecule diagram -->
+      <div class="hidden lg:flex justify-center items-center">
+        <div style="position:relative;width:420px;height:420px;">
+          <!-- Outer ring -->
+          <div style="position:absolute;inset:0;border:1px solid rgba(200,149,42,0.2);border-radius:50%;"></div>
+          <div style="position:absolute;inset:20px;border:1px dashed rgba(255,255,255,0.08);border-radius:50%;animation:spin 30s linear infinite;"></div>
+          <!-- Center -->
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:130px;height:130px;background:linear-gradient(135deg,var(--navy2),#1a4a8a);border-radius:50%;border:2px solid rgba(200,149,42,0.5);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2;">
+            <div style="font-size:1rem;font-weight:900;color:#fff;letter-spacing:-0.02em;">BCP®</div>
+            <div style="font-size:0.58rem;color:var(--gold2);letter-spacing:0.08em;text-transform:uppercase;margin-top:2px;">生物活性胜肽</div>
+          </div>
+          <!-- Orbit dots — 6 brands -->
+          <div id="orbitBrands"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     STATS BAR
+════════════════════════════════════════════ -->
+<div class="stats-bar">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
+      <div class="stat-item fade-up">
+        <div class="stat-num">40+</div>
+        <div class="stat-label">同行評審臨床研究</div>
+      </div>
+      <div class="stat-item fade-up" style="transition-delay:0.1s">
+        <div class="stat-num">6</div>
+        <div class="stat-label">專利生物活性胜肽系列</div>
+      </div>
+      <div class="stat-item fade-up" style="transition-delay:0.2s">
+        <div class="stat-num">130+</div>
+        <div class="stat-label">年全球膠原蛋白研究經驗</div>
+      </div>
+      <div class="stat-item fade-up" style="transition-delay:0.3s">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">國家市場覆蓋</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     MECHANISM SECTION
+════════════════════════════════════════════ -->
+<section id="mechanism" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14 fade-up">
+      <div class="section-label">第一性原理</div>
+      <h2 class="section-title">底層生化機制</h2>
+      <p class="mt-3 text-gray-500 text-sm max-w-xl mx-auto leading-relaxed">
+        GELITA BCP® 並非單純補充膠原蛋白，而是透過精準的胜肽訊號，
+        直接激活目標細胞的合成代謝通路。
+      </p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="mech-card fade-up">
+        <div class="mech-icon">🧬</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem;">酵素水解切割</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.6;">
+          利用受控酵素水解（非熱裂解/化學水解），將天然膠原蛋白三股螺旋切割為具特定胺基酸序列的生物活性胜肽，保留信號活性。
+        </p>
+      </div>
+      <div class="mech-card fade-up" style="transition-delay:0.1s">
+        <div class="mech-icon">🔬</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem;">腸道完整吸收</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.6;">
+          BCP® 胜肽（分子量 &lt;5kDa）可以原本形式穿越腸道屏障進入血液循環，並累積於皮膚、關節、骨骼等目標組織。
+        </p>
+      </div>
+      <div class="mech-card fade-up" style="transition-delay:0.2s">
+        <div class="mech-icon">⚡</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem;">細胞訊號激活</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.6;">
+          在目標細胞（纖維母細胞、軟骨細胞、骨芽細胞）中觸發 P13K-Akt、MAPK、mTOR 等合成代謝信號通路，促進ECM分子合成。
+        </p>
+      </div>
+      <div class="mech-card fade-up" style="transition-delay:0.3s">
+        <div class="mech-icon">🏗️</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem;">組織重建</h3>
+        <p style="font-size:0.8rem;color:var(--muted);line-height:1.6;">
+          上調 Collagen Type I、Biglycan、Decorin、Versican 等細胞外基質成分的 mRNA 表現，驅動長期組織結構修復與強化。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     BRAND CARDS
+════════════════════════════════════════════ -->
+<section id="brands" class="py-20" style="background:var(--offwhite);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14 fade-up">
+      <div class="section-label">六大系列</div>
+      <h2 class="section-title">GELITA® BCP® 產品矩陣</h2>
+      <p class="mt-3 text-gray-500 text-sm max-w-xl mx-auto">每個系列均針對特定組織，具備獨立臨床驗證數據</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- VERISOL -->
+      <div id="verisol" class="brand-card fade-up">
+        <div class="card-header" style="background:linear-gradient(135deg,#3a1060,#6a1e9e);">
+          <div class="card-header-stripe" style="position:absolute;top:0;right:0;width:80px;height:80px;background:rgba(255,255,255,0.04);border-radius:50%;transform:translate(20px,-20px);"></div>
+          <div class="brand-tag">皮膚美容</div>
+          <div class="brand-name">VERISOL<span>®</span></div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.55);margin-top:0.2rem;letter-spacing:0.05em;">Beauty from Within</div>
+        </div>
+        <div class="card-body">
+          <div class="target-tissue">
+            <svg class="w-4 h-4 flex-shrink-0" style="color:var(--gold2)" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+            目標組織：<strong>真皮層纖維母細胞 / 細胞外基質</strong>
+          </div>
+          <div class="mechanism-text">
+            口服後 BCP® 胜肽直接堆積於真皮層纖維母細胞中，上調 Collagen Type I mRNA 表現約 <strong>1.87 倍</strong>，同時增強 Biglycan、Decorin、Versican 等蛋白聚糖合成，重建皮膚結構蛋白網絡。
+          </div>
+          <div class="kpi-grid">
+            <div class="kpi-box">
+              <div class="kpi-value gold">−20%</div>
+              <div class="kpi-label">眼周皺紋減少<br/><span style="font-size:0.6rem;opacity:0.7;">Proksch et al. 2014 · 8週</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value gold">+1.87×</div>
+              <div class="kpi-label">膠原蛋白 mRNA 表現提升<br/><span style="font-size:0.6rem;opacity:0.7;">體外細胞實驗</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value gold">2.5g</div>
+              <div class="kpi-label">臨床驗證<br/>有效每日劑量</div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value gold">8wk</div>
+              <div class="kpi-label">顯著效果<br/>所需最短療程</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer flex items-center justify-between">
+          <div class="dosage-badge">💊 建議用量：2.5–5g / 日</div>
+          <a href="#research" style="font-size:0.72rem;color:var(--gold);font-weight:600;">查看文獻 →</a>
+        </div>
+      </div>
+
+      <!-- FORTIGEL -->
+      <div id="fortigel" class="brand-card fade-up" style="transition-delay:0.08s">
+        <div class="card-header" style="background:linear-gradient(135deg,#0a3d6b,#0069b4);">
+          <div class="brand-tag" style="background:rgba(100,180,255,0.2);color:#81d4fa;border-color:rgba(100,180,255,0.35);">關節軟骨</div>
+          <div class="brand-name">FORTIGEL<span>®</span></div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.55);margin-top:0.2rem;letter-spacing:0.05em;">The Joint Health Revolution</div>
+        </div>
+        <div class="card-body">
+          <div class="target-tissue">
+            <svg class="w-4 h-4 flex-shrink-0" style="color:#81d4fa" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+            目標組織：<strong>關節軟骨細胞 / 軟骨細胞外基質</strong>
+          </div>
+          <div class="mechanism-text" style="border-color:#81d4fa;">
+            特定 BCP® 胜肽刺激軟骨細胞增殖及蛋白聚糖（Proteoglycan）合成，MRI 驗證軟骨基質密度顯著提升，同時降低關節發炎信號，改善活動時疼痛。
+          </div>
+          <div class="kpi-grid">
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#2196f3;">↑ 顯著</div>
+              <div class="kpi-label">MRI 蛋白聚糖含量<br/><span style="font-size:0.6rem;opacity:0.7;">McAlindon et al. 2011 · 24wk</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#2196f3;">↓ 顯著</div>
+              <div class="kpi-label">活動相關關節疼痛<br/><span style="font-size:0.6rem;opacity:0.7;">Clark et al. 2008 · 6個月</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#2196f3;">5g</div>
+              <div class="kpi-label">最低有效劑量<br/><span style="font-size:0.6rem;opacity:0.7;">Zdzieblik et al. 2017</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#2196f3;">12wk</div>
+              <div class="kpi-label">疼痛改善<br/>起效時間</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer flex items-center justify-between">
+          <div class="dosage-badge">💊 建議用量：5–10g / 日</div>
+          <a href="#research" style="font-size:0.72rem;color:#2196f3;font-weight:600;">查看文獻 →</a>
+        </div>
+      </div>
+
+      <!-- BODYBALANCE -->
+      <div id="bodybalance" class="brand-card fade-up" style="transition-delay:0.16s">
+        <div class="card-header" style="background:linear-gradient(135deg,#1a4a1e,#2e7d32);">
+          <div class="brand-tag" style="background:rgba(100,200,120,0.2);color:#a5d6a7;border-color:rgba(100,200,120,0.35);">肌肉 / 體態</div>
+          <div class="brand-name">BODYBALANCE<span style="color:#a5d6a7;">®</span></div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.55);margin-top:0.2rem;letter-spacing:0.05em;">Performance Peptides · Always in Shape</div>
+        </div>
+        <div class="card-body">
+          <div class="target-tissue">
+            <svg class="w-4 h-4 flex-shrink-0" style="color:#a5d6a7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+            目標組織：<strong>骨骼肌細胞 / 肌原纖維蛋白</strong>
+          </div>
+          <div class="mechanism-text" style="border-color:#a5d6a7;">
+            運動後服用 BODYBALANCE® 激活肌肉 P13K-Akt（促進膠原蛋白 Type I 表現）、MAPK（促進肌原纖維蛋白合成）及 mTOR（肌肉蛋白質合成調節因數）通路，上調 221 種蛋白質表達。
+          </div>
+          <div class="kpi-grid">
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#4caf50;">↑ 瘦體重</div>
+              <div class="kpi-label">顯著增加瘦體重<br/><span style="font-size:0.6rem;opacity:0.7;">Zdzieblik et al. 2015 · DXA</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#4caf50;">↓ 脂肪量</div>
+              <div class="kpi-label">體脂顯著下降<br/><span style="font-size:0.6rem;opacity:0.7;">Jendricke et al. 2019</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#4caf50;">221種</div>
+              <div class="kpi-label">蛋白質上調表達<br/><span style="font-size:0.6rem;opacity:0.7;">vs 安慰劑組44種</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#4caf50;">15g</div>
+              <div class="kpi-label">最佳每日劑量<br/><span style="font-size:0.6rem;opacity:0.7;">Zdzieblik 劑量探索</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer flex items-center justify-between">
+          <div class="dosage-badge">💊 建議用量：15g / 日（運動後）</div>
+          <a href="#research" style="font-size:0.72rem;color:#4caf50;font-weight:600;">查看文獻 →</a>
+        </div>
+      </div>
+
+      <!-- FORTIBONE -->
+      <div id="fortibone" class="brand-card fade-up" style="transition-delay:0.24s">
+        <div class="card-header" style="background:linear-gradient(135deg,#6d2c00,#bf360c);">
+          <div class="brand-tag" style="background:rgba(255,160,60,0.2);color:#ffcc80;border-color:rgba(255,160,60,0.35);">骨骼強化</div>
+          <div class="brand-name">FORTIBONE<span style="color:#ffcc80;">®</span></div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.55);margin-top:0.2rem;letter-spacing:0.05em;">Collagen Matrix Stimulation</div>
+        </div>
+        <div class="card-body">
+          <div class="target-tissue">
+            <svg class="w-4 h-4 flex-shrink-0" style="color:#ffcc80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+            目標組織：<strong>骨芽細胞 / 骨膠原蛋白基質</strong>
+          </div>
+          <div class="mechanism-text" style="border-color:#ffcc80;">
+            刺激骨芽細胞合成骨膠原蛋白基質，提升骨形成標誌物 P1NP，同時抑制破骨細胞活性。獨立臨床研究顯示股骨頸骨密度（BMD）顯著回升，長達 4 年追蹤無骨折事件。
+          </div>
+          <div class="kpi-grid">
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#ff7043;">+6.7%</div>
+              <div class="kpi-label">股骨頸骨密度增加<br/><span style="font-size:0.6rem;opacity:0.7;">König et al. 2018 · 12個月</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#ff7043;">+3%</div>
+              <div class="kpi-label">脊柱骨密度增加<br/><span style="font-size:0.6rem;opacity:0.7;">König et al. 2018</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#ff7043;">8.16%</div>
+              <div class="kpi-label">脊柱BMD 3年最大增幅<br/><span style="font-size:0.6rem;opacity:0.7;">Zdzieblik et al. 2021</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#ff7043;">79%</div>
+              <div class="kpi-label">骨癒合「非常好/好」<br/><span style="font-size:0.6rem;opacity:0.7;">Knefeli et al. 2018</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer flex items-center justify-between">
+          <div class="dosage-badge">💊 建議用量：5g / 日 + Ca + Vit D</div>
+          <a href="#research" style="font-size:0.72rem;color:#ff7043;font-weight:600;">查看文獻 →</a>
+        </div>
+      </div>
+
+      <!-- TENDOFORTE -->
+      <div id="tendoforte" class="brand-card fade-up" style="transition-delay:0.32s">
+        <div class="card-header" style="background:linear-gradient(135deg,#004d40,#00695c);">
+          <div class="brand-tag" style="background:rgba(60,200,180,0.2);color:#80deea;border-color:rgba(60,200,180,0.35);">肌腱 / 韌帶</div>
+          <div class="brand-name">TENDOFORTE<span style="color:#80deea;">®</span></div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.55);margin-top:0.2rem;letter-spacing:0.05em;">Strong Tendons · Active Life</div>
+        </div>
+        <div class="card-body">
+          <div class="target-tissue">
+            <svg class="w-4 h-4 flex-shrink-0" style="color:#80deea" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+            目標組織：<strong>肌腱成纖維細胞 / 韌帶膠原纖維</strong>
+          </div>
+          <div class="mechanism-text" style="border-color:#80deea;">
+            針對肌腱/韌帶組織的特定 BCP® 配方，增強膠原纖維結構完整性，刺激肌腱成纖維細胞膠原蛋白合成，改善慢性肌腱疼痛，適用於運動傷害恢復及慢性結締組織損傷。
+          </div>
+          <div class="kpi-grid">
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#26a69a;">↑ 合成</div>
+              <div class="kpi-label">膠原纖維合成率提升<br/><span style="font-size:0.6rem;opacity:0.7;">肌腱成纖維細胞研究</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#26a69a;">↓ 疼痛</div>
+              <div class="kpi-label">慢性跟腱疼痛顯著改善<br/><span style="font-size:0.6rem;opacity:0.7;">臨床雙盲對照試驗</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#26a69a;">5g</div>
+              <div class="kpi-label">臨床驗證<br/>有效劑量</div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#26a69a;">6mo</div>
+              <div class="kpi-label">建議最短<br/>療程週期</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer flex items-center justify-between">
+          <div class="dosage-badge">💊 建議用量：5g / 日</div>
+          <a href="#research" style="font-size:0.72rem;color:#26a69a;font-weight:600;">查看文獻 →</a>
+        </div>
+      </div>
+
+      <!-- PeptENDURE -->
+      <div id="peptendure" class="brand-card fade-up" style="transition-delay:0.40s">
+        <div class="card-header" style="background:linear-gradient(135deg,#1a0044,#4a1080);">
+          <div class="brand-tag" style="background:rgba(180,100,255,0.2);color:#ce93d8;border-color:rgba(180,100,255,0.35);">耐力運動</div>
+          <div class="brand-name">PeptENDURE<span style="color:#ce93d8;">®</span></div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.55);margin-top:0.2rem;letter-spacing:0.05em;">Endurance · Recovery · Performance</div>
+        </div>
+        <div class="card-body">
+          <div class="target-tissue">
+            <svg class="w-4 h-4 flex-shrink-0" style="color:#ce93d8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+            目標組織：<strong>全身結締組織 / 運動系統</strong>
+          </div>
+          <div class="mechanism-text" style="border-color:#ce93d8;">
+            專為耐力運動員設計的 BCP® 配方，同時支援肌肉、關節、肌腱及骨骼的恢復與強化，減少長時間訓練對結締組織的氧化傷害，優化整體運動表現與恢復效率。
+          </div>
+          <div class="kpi-grid">
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#ab47bc;">↑ 恢復</div>
+              <div class="kpi-label">運動後恢復速率提升<br/><span style="font-size:0.6rem;opacity:0.7;">耐力運動員專項研究</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#ab47bc;">↓ 傷害</div>
+              <div class="kpi-label">結締組織損傷風險降低<br/><span style="font-size:0.6rem;opacity:0.7;">縱向追蹤研究</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#ab47bc;">全面</div>
+              <div class="kpi-label">全身結締組織<br/>綜合支援配方</div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#ab47bc;">長期</div>
+              <div class="kpi-label">建議持續使用<br/>效果最佳化</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer flex items-center justify-between">
+          <div class="dosage-badge">💊 建議用量：依訓練強度調整</div>
+          <a href="#research" style="font-size:0.72rem;color:#ab47bc;font-weight:600;">查看文獻 →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     LATEST RESEARCH (動態載入區塊)
+════════════════════════════════════════════ -->
+<section id="research" class="research-section py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 fade-up">
+      <div>
+        <div class="section-label" style="color:var(--gold2);">PubMed 每日自動更新</div>
+        <h2 class="section-title" style="color:#fff;">Latest Research</h2>
+        <p style="color:rgba(255,255,255,0.5);font-size:0.82rem;margin-top:0.4rem;">
+          最新科學文獻摘要 · 由 <code style="background:rgba(255,255,255,0.08);padding:0.1rem 0.4rem;border-radius:4px;font-size:0.75rem;">data.json</code> 自動填充
+        </p>
+      </div>
+      <div class="flex items-center gap-3">
+        <!-- Filter pills -->
+        <div id="filterContainer" class="flex flex-wrap gap-2">
+          <button class="filter-btn active-filter" data-filter="all"
+            style="font-size:0.72rem;font-weight:600;padding:0.3rem 0.8rem;border-radius:20px;border:1px solid rgba(200,149,42,0.5);color:var(--gold2);background:rgba(200,149,42,0.15);cursor:pointer;transition:all 0.2s;">
+            全部
+          </button>
+          <button class="filter-btn" data-filter="VERISOL"
+            style="font-size:0.72rem;font-weight:600;padding:0.3rem 0.8rem;border-radius:20px;border:1px solid rgba(180,80,220,0.4);color:rgba(206,147,216,0.8);background:transparent;cursor:pointer;transition:all 0.2s;">
+            VERISOL
+          </button>
+          <button class="filter-btn" data-filter="FORTIGEL"
+            style="font-size:0.72rem;font-weight:600;padding:0.3rem 0.8rem;border-radius:20px;border:1px solid rgba(2,136,209,0.4);color:rgba(129,212,250,0.8);background:transparent;cursor:pointer;transition:all 0.2s;">
+            FORTIGEL
+          </button>
+          <button class="filter-btn" data-filter="BODYBALANCE"
+            style="font-size:0.72rem;font-weight:600;padding:0.3rem 0.8rem;border-radius:20px;border:1px solid rgba(46,125,50,0.5);color:rgba(165,214,167,0.8);background:transparent;cursor:pointer;transition:all 0.2s;">
+            BODYBALANCE
+          </button>
+          <button class="filter-btn" data-filter="FORTIBONE"
+            style="font-size:0.72rem;font-weight:600;padding:0.3rem 0.8rem;border-radius:20px;border:1px solid rgba(230,81,0,0.4);color:rgba(255,204,128,0.8);background:transparent;cursor:pointer;transition:all 0.2s;">
+            FORTIBONE
+          </button>
+        </div>
+        <button onclick="fetchData()" id="refreshBtn"
+          style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;font-weight:600;padding:0.5rem 1rem;border-radius:8px;background:rgba(200,149,42,0.15);border:1px solid rgba(200,149,42,0.4);color:var(--gold2);cursor:pointer;transition:all 0.2s;"
+          onmouseover="this.style.background='rgba(200,149,42,0.25)'"
+          onmouseout="this.style.background='rgba(200,149,42,0.15)'">
+          <svg id="refreshIcon" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+          </svg>
+          重新載入
+        </button>
+      </div>
+    </div>
+
+    <!-- Status bar -->
+    <div id="statusBar" style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1.2rem;font-size:0.75rem;color:rgba(255,255,255,0.4);">
+      <div id="statusDot" style="width:7px;height:7px;border-radius:50%;background:#4caf50;flex-shrink:0;"></div>
+      <span id="statusText">資料已載入</span>
+      <span id="lastUpdated" style="margin-left:auto;"></span>
+    </div>
+
+    <!-- Papers grid -->
+    <div id="papersGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Skeleton loaders -->
+      <div class="loading-pulse" style="height:200px;"></div>
+      <div class="loading-pulse" style="height:200px;transition-delay:0.1s;"></div>
+      <div class="loading-pulse" style="height:200px;transition-delay:0.2s;"></div>
+    </div>
+
+    <!-- Empty state -->
+    <div id="emptyState" style="display:none;text-align:center;padding:3rem;">
+      <div style="font-size:2rem;margin-bottom:0.8rem;">🔬</div>
+      <div style="color:rgba(255,255,255,0.5);font-size:0.9rem;">目前沒有符合篩選條件的文獻</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <div style="font-size:1.4rem;font-weight:900;color:#fff;letter-spacing:-0.03em;margin-bottom:0.5rem;">GELITA<span style="color:var(--gold2);">®</span></div>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.4);line-height:1.7;">
+          生物活性膠原蛋白肽科學數據中心<br/>
+          本網頁文獻數據來源：PubMed / GELITA AG 官方發布<br/>
+          僅供專業研究參考，非醫療建議。
+        </p>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold2);margin-bottom:0.8rem;">品牌系列</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.3rem;">
+          <a href="#verisol" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">VERISOL®</a>
+          <a href="#fortigel" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">FORTIGEL®</a>
+          <a href="#bodybalance" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">BODYBALANCE®</a>
+          <a href="#fortibone" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">FORTIBONE®</a>
+          <a href="#tendoforte" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">TENDOFORTE®</a>
+          <a href="#peptendure" style="font-size:0.78rem;color:rgba(255,255,255,0.5);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">PeptENDURE®</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold2);margin-bottom:0.8rem;">數據架構</div>
+        <div style="font-size:0.75rem;color:rgba(255,255,255,0.45);line-height:1.8;">
+          📄 <code style="background:rgba(255,255,255,0.07);padding:0.1rem 0.4rem;border-radius:3px;">data.json</code> — 文獻數據源<br/>
+          🔄 <code style="background:rgba(255,255,255,0.07);padding:0.1rem 0.4rem;border-radius:3px;">fetchData()</code> — 動態渲染函數<br/>
+          🏷️ 品牌標籤過濾系統<br/>
+          📱 Responsive · Mobile First
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:gap:1rem;">
+      <div style="font-size:0.7rem;color:rgba(255,255,255,0.25);">
+        © GELITA AG · BCP® Bioactive Collagen Peptides® · All rights reserved
+      </div>
+      <div style="font-size:0.7rem;color:rgba(255,255,255,0.2);">
+        最後更新：<span id="footerDate"></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════ -->
+<script>
+/* ── Brand color map ── */
+const BRAND_COLORS = {
+  VERISOL:     { bg: 'rgba(156,39,176,0.2)',  border: 'rgba(156,39,176,0.45)', text: '#ce93d8' },
+  FORTIGEL:    { bg: 'rgba(2,136,209,0.2)',   border: 'rgba(2,136,209,0.45)',  text: '#81d4fa' },
+  BODYBALANCE: { bg: 'rgba(46,125,50,0.2)',   border: 'rgba(46,125,50,0.45)', text: '#a5d6a7' },
+  FORTIBONE:   { bg: 'rgba(230,81,0,0.2)',    border: 'rgba(230,81,0,0.45)',  text: '#ffcc80' },
+  TENDOFORTE:  { bg: 'rgba(0,96,100,0.2)',    border: 'rgba(0,96,100,0.45)',  text: '#80deea' },
+  PeptENDURE:  { bg: 'rgba(74,20,140,0.2)',   border: 'rgba(74,20,140,0.45)', text: '#ce93d8' },
+};
+
+let allPapers = [];
+let activeFilter = 'all';
+
+/* ════════════════════════════════════
+   fetchData()
+   Reads data.json from the same directory
+   as this HTML file and renders papers.
+   Replace with your real API endpoint as needed.
+════════════════════════════════════ */
+async function fetchData() {
+  const grid     = document.getElementById('papersGrid');
+  const statusDot  = document.getElementById('statusDot');
+  const statusText = document.getElementById('statusText');
+  const lastUpdated = document.getElementById('lastUpdated');
+  const refreshIcon = document.getElementById('refreshIcon');
+
+  /* Loading state */
+  refreshIcon.style.animation = 'spin 0.8s linear infinite';
+  statusDot.style.background  = '#ffb74d';
+  statusText.textContent      = '載入中…';
+  grid.innerHTML = `
+    <div class="loading-pulse" style="height:200px;"></div>
+    <div class="loading-pulse" style="height:200px;"></div>
+    <div class="loading-pulse" style="height:200px;"></div>
+  `;
+
+  try {
+    /* ── Fetch from data.json (adjust path if needed) ── */
+    const response = await fetch('./data.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+
+    allPapers = data.papers || [];
+
+    /* Update meta */
+    statusDot.style.background  = '#4caf50';
+    statusText.textContent      = `已載入 ${allPapers.length} 篇文獻`;
+    lastUpdated.textContent     = `更新日期：${data.lastUpdated || '—'}`;
+    document.getElementById('footerDate').textContent = data.lastUpdated || '—';
+
+    renderPapers(allPapers, activeFilter);
+
+  } catch (err) {
+    statusDot.style.background  = '#ef5350';
+    statusText.textContent      = `載入失敗：${err.message}`;
+    grid.innerHTML = `
+      <div style="grid-column:1/-1;text-align:center;padding:3rem;color:rgba(255,255,255,0.4);">
+        <div style="font-size:2rem;margin-bottom:0.8rem;">⚠️</div>
+        <div style="font-size:0.88rem;">無法讀取 data.json</div>
+        <div style="font-size:0.75rem;margin-top:0.4rem;opacity:0.6;">請確認 data.json 位於相同目錄下，或由伺服器提供</div>
+        <button onclick="fetchData()" style="margin-top:1rem;padding:0.5rem 1.2rem;background:rgba(200,149,42,0.15);border:1px solid rgba(200,149,42,0.4);color:#e0aa44;border-radius:6px;font-size:0.78rem;cursor:pointer;">重試</button>
+      </div>
+    `;
+    console.error('[GELITA] fetchData error:', err);
+  } finally {
+    refreshIcon.style.animation = '';
+  }
+}
+
+/* ════════════════════════════════════
+   renderPapers(papers, filter)
+════════════════════════════════════ */
+function renderPapers(papers, filter = 'all') {
+  const grid  = document.getElementById('papersGrid');
+  const empty = document.getElementById('emptyState');
+  const list  = filter === 'all' ? papers : papers.filter(p => p.brand === filter);
+
+  if (list.length === 0) {
+    grid.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  grid.innerHTML = list.map((p, i) => {
+    const bc = BRAND_COLORS[p.brand] || BRAND_COLORS.FORTIGEL;
+    const tagHtml = (p.tags || []).slice(0, 3).map(t =>
+      `<span class="paper-tag">${t}</span>`
+    ).join('');
+    return `
+      <div class="paper-card fade-up" style="transition-delay:${i * 0.06}s;">
+        <div>
+          <span class="paper-brand-tag"
+            style="background:${bc.bg};border:1px solid ${bc.border};color:${bc.text};">
+            ${p.brand || '—'}
+          </span>
+        </div>
+        <div class="paper-title">${p.title || '—'}</div>
+        <div class="paper-meta">${p.authors || ''} · ${p.journal || ''} · ${p.year || ''}</div>
+        <div class="paper-summary">${p.summary || ''}</div>
+        <div class="paper-tags">${tagHtml}</div>
+        <a href="${p.pubmedUrl || 'https://pubmed.ncbi.nlm.nih.gov/'}"
+           target="_blank" rel="noopener" class="read-btn">
+          <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+          </svg>
+          閱讀原文 (PubMed)
+        </a>
+      </div>
+    `;
+  }).join('');
+
+  /* Trigger fade-up */
+  requestAnimationFrame(() => {
+    document.querySelectorAll('#papersGrid .fade-up').forEach(el => el.classList.add('visible'));
+  });
+}
+
+/* ── Filter buttons ── */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeFilter = btn.dataset.filter;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active-filter'));
+      btn.classList.add('active-filter');
+      renderPapers(allPapers, activeFilter);
+    });
+  });
+});
+
+/* ── Orbit diagram ── */
+function buildOrbit() {
+  const brands = [
+    { name: 'VERISOL®',     color: '#ce93d8', angle: 0   },
+    { name: 'FORTIGEL®',    color: '#81d4fa', angle: 60  },
+    { name: 'BODYBALANCE®', color: '#a5d6a7', angle: 120 },
+    { name: 'FORTIBONE®',   color: '#ffcc80', angle: 180 },
+    { name: 'TENDOFORTE®',  color: '#80deea', angle: 240 },
+    { name: 'PeptENDURE®',  color: '#ce93d8', angle: 300 },
+  ];
+  const container = document.getElementById('orbitBrands');
+  if (!container) return;
+  brands.forEach(b => {
+    const rad = (b.angle - 90) * Math.PI / 180;
+    const r = 170;
+    const cx = 210, cy = 210;
+    const x = cx + r * Math.cos(rad) - 50;
+    const y = cy + r * Math.sin(rad) - 18;
+    const dot = document.createElement('div');
+    dot.style.cssText = `
+      position:absolute; left:${x}px; top:${y}px;
+      display:flex; align-items:center; gap:5px;
+    `;
+    dot.innerHTML = `
+      <div style="width:9px;height:9px;border-radius:50%;background:${b.color};flex-shrink:0;
+        box-shadow:0 0 8px ${b.color}80;"></div>
+      <span style="font-size:0.65rem;font-weight:700;color:${b.color};letter-spacing:0.04em;
+        white-space:nowrap;">${b.name}</span>
+    `;
+    container.appendChild(dot);
+  });
+}
+
+/* ── Intersection observer for fade-up ── */
+function initFadeUp() {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+}
+
+/* ── Mobile menu ── */
+document.getElementById('menuBtn').addEventListener('click', () => {
+  const m = document.getElementById('mobileMenu');
+  m.classList.toggle('hidden');
+  m.classList.toggle('flex');
+});
+
+/* ── Active nav on scroll ── */
+window.addEventListener('scroll', () => {
+  const sections = ['brands', 'mechanism', 'research'];
+  const links = document.querySelectorAll('.nav-link');
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    if (rect.top <= 80 && rect.bottom > 80) {
+      links.forEach(l => l.classList.remove('active'));
+      const target = document.querySelector(`.nav-link[href="#${id}"]`);
+      if (target) target.classList.add('active');
+    }
+  });
+});
+
+/* ── Init ── */
+document.addEventListener('DOMContentLoaded', () => {
+  buildOrbit();
+  initFadeUp();
+  fetchData();
+  document.getElementById('footerDate').textContent = new Date().toISOString().split('T')[0];
+});
+
+/* ── CSS keyframe for spin ── */
+const style = document.createElement('style');
+style.textContent = `@keyframes spin { to { transform: rotate(360deg); } }`;
+document.head.appendChild(style);
+</script>
+
+</body>
+</html>
