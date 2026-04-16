@@ -1,9 +1,11 @@
 {
-  "lastUpdated": "2026-04-15",
+  "lastUpdated": "2026-04-16",
+  "_note": "所有 pubmedUrl 均經網路搜尋逐一驗證；無法確認 PMID 者使用 PubMed 搜尋連結或期刊直連，標記 [搜尋連結]",
   "papers": [
+
     {
       "id": "proksch2013",
-      "title": "Oral Intake of Specific Bioactive Collagen Peptides Reduces Skin Wrinkles and Increases Dermal Matrix Synthesis",
+      "title": "Oral supplementation of specific collagen peptides has beneficial effects on human skin physiology: a double-blind, placebo-controlled study",
       "authors": "Proksch et al.",
       "journal": "Skin Pharmacology and Physiology",
       "year": 2013,
@@ -14,7 +16,7 @@
     },
     {
       "id": "proksch2014",
-      "title": "Oral Supplementation of Specific Collagen Peptides Has Beneficial Effects on Human Skin Physiology",
+      "title": "Oral intake of specific bioactive collagen peptides reduces skin wrinkles and increases dermal matrix synthesis",
       "authors": "Proksch et al.",
       "journal": "Skin Pharmacology and Physiology",
       "year": 2014,
@@ -31,56 +33,57 @@
       "year": 2015,
       "brand": "VERISOL",
       "tags": ["橘皮組織", "脂肪圓", "皮下脂肪密度"],
-      "summary": "105名24至50歲女性每天補充VERISOL® 2.5克持續6個月，脂肪圓的程度顯著下降，大腿皮膚的波紋度顯著降低，皮下脂肪密度提升，橘皮組織形態明顯改善。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/26362110/"
+      "summary": "105名24至50歲女性每天補充VERISOL® 2.5克持續6個月，脂肪圓程度顯著下降，大腿皮膚波紋度顯著降低，皮下脂肪密度提升，橘皮組織形態明顯改善。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/26561784/"
     },
     {
       "id": "hexsel2017",
-      "title": "Oral Supplementation with Specific Bioactive Collagen Peptides Improves Nail Growth and Reduces Symptoms of Brittle Nails",
+      "title": "Oral supplementation with specific bioactive collagen peptides improves nail growth and reduces symptoms of brittle nails",
       "authors": "Hexsel et al.",
       "journal": "Journal of Cosmetic Dermatology",
       "year": 2017,
       "brand": "VERISOL",
       "tags": ["指甲生長", "脆弱指甲", "美容"],
-      "summary": "25名26至50歲女性每天補充VERISOL® 2.5克持續6個月，指甲顯著增長，脆弱指甲狀況得到改善，指甲斷裂的頻率明顯降低，停止補充後效果持續。",
+      "summary": "25名26至50歲女性每天補充VERISOL® 2.5克持續6個月，指甲顯著增長（+12%），脆弱指甲狀況得到改善，指甲斷裂頻率明顯降低（−42%），停止補充後效果持續。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/28786550/"
     },
     {
       "id": "oesser2020",
-      "title": "Oral Administration of Specific Bioactive Collagen Peptides Increases Hair Thickness",
+      "title": "The oral intake of specific bioactive collagen peptides has a positive effect on hair thickness",
       "authors": "Oesser",
-      "journal": "Journal of Cosmetic Dermatology",
+      "journal": "Nutrafoods",
       "year": 2020,
       "brand": "VERISOL",
       "tags": ["頭髮變粗", "毛囊", "頭髮新陳代謝"],
       "summary": "44名年齡39至75歲女性每天補充VERISOL® 2.5克持續16周，頭髮厚度顯著增加；體外實驗顯示毛囊細胞增殖顯著增加，對頭髮新陳代謝有積極影響。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/32017351/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Oesser+2020+collagen+peptides+hair+thickness+Nutrafoods"
     },
     {
       "id": "proksch2020",
-      "title": "Collagen Peptide Supplementation Improves Skin Elasticity and Reduces Wrinkles in Asian and Caucasian Women",
+      "title": "Collagen peptide supplementation improves skin elasticity and reduces wrinkles in Asian and Caucasian women aged 50-70",
       "authors": "Proksch et al.",
-      "journal": "Nutrients",
+      "journal": "Skin Pharmacology and Physiology",
       "year": 2020,
       "brand": "VERISOL",
       "tags": ["皮膚彈性", "亞洲人群", "跨族群研究"],
       "summary": "76名50至70歲亞洲和高加索女性，每天5克VERISOL® F持續8周。皮膚彈性整個研究期間平均提升7.6%，眼周皺紋體積平均減少14%，從第4周起即可觀察到改善，效果在停用4周後仍能保持。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/32796726/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Proksch+2020+VERISOL+skin+elasticity+wrinkles+Asian+Caucasian"
     },
     {
       "id": "cosmetics2025",
-      "title": "Specific Collagen Peptides (SCPs) Reduce Eye Wrinkles, Increase Skin Elasticity and Improve Skin Moisture",
-      "authors": "Cosmetics (2025), 12(2), 79",
+      "title": "The Oral Intake of Specific Bovine-Derived Bioactive Collagen Peptides Has a Stimulatory Effect on Dermal Matrix Synthesis and Improves Various Clinical Skin Parameters",
+      "authors": "Schunck & Oesser et al.",
       "journal": "Cosmetics",
       "year": 2025,
       "brand": "VERISOL",
-      "tags": ["皺紋−25%", "皮膚彈性", "皮膚水分+26%", "2025最新"],
+      "tags": ["皺紋−25%", "皮膚彈性+9%", "皮膚水分+26%", "2025最新"],
       "summary": "66名35至55歲高加索女性每天服用2.5克牛源性SCPs持續8周。8周後眼周皺紋體積比安慰劑組顯著減少25%，皮膚彈性比安慰劑組提高9%，皮膚水分含量增加26%。",
-      "pubmedUrl": "https://doi.org/10.3390/cosmetics12020079"
+      "pubmedUrl": "https://www.mdpi.com/2079-9284/12/2/79"
     },
+
     {
       "id": "clark2008",
-      "title": "24-Week Study on the Use of Collagen Hydrolysate as a Dietary Supplement in Athletes with Activity-Related Joint Pain",
+      "title": "24-Week study on the use of collagen hydrolysate as a dietary supplement in athletes with activity-related joint pain",
       "authors": "Clark et al.",
       "journal": "Current Medical Research and Opinion",
       "year": 2008,
@@ -91,18 +94,18 @@
     },
     {
       "id": "mcalindon2011",
-      "title": "Change in Knee Osteoarthritis Cartilage Detected by dGEMRIC Following Treatment with Collagen Hydrolysate",
+      "title": "Change in knee osteoarthritis cartilage detected by delayed gadolinium enhanced magnetic resonance imaging following treatment with collagen hydrolysate: a pilot randomized controlled trial",
       "authors": "McAlindon et al.",
       "journal": "Osteoarthritis and Cartilage",
       "year": 2011,
       "brand": "FORTIGEL",
-      "tags": ["軟骨再生", "MRI", "蛋白聚糖", "膝關節炎"],
-      "summary": "30名早期膝關節炎患者（年齡≥49歲），每日10克持續48周（11個月）。MRI顯示膝關節軟骨蛋白聚糖含量顯著提升，從第24周（6個月）開始觀察到顯著變化，為軟骨再生提供影像學證據。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/21353817/"
+      "tags": ["軟骨再生", "dGEMRIC", "蛋白聚糖", "膝關節炎"],
+      "summary": "30名早期膝關節炎患者（年齡≥49歲），每日10克持續48周（11個月）。dGEMRIC MRI顯示膝關節軟骨蛋白聚糖含量顯著提升，從第24周（6個月）開始觀察到顯著變化，為軟骨再生提供影像學證據。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/21251991/"
     },
     {
       "id": "zdzieblik2017_joint",
-      "title": "Supplementation with Specific Collagen Peptides and Physical Activity Reduces Activity-Related Joint Pain",
+      "title": "Improvement of activity-related knee joint discomfort following supplementation of specific collagen peptides",
       "authors": "Zdzieblik et al.",
       "journal": "Applied Physiology, Nutrition, and Metabolism",
       "year": 2017,
@@ -120,33 +123,34 @@
       "brand": "FORTIGEL",
       "tags": ["OCL", "骨軟骨病變", "MRI", "運動員復出"],
       "summary": "3名成年男性（30歲、42歲和43歲），每日10克持續3至16個月。MRI記錄骨軟骨病變的改善或穩定、關節面恢復，實現功能恢復和完全恢復比賽水準。",
-      "pubmedUrl": "https://scholar.google.com/scholar?q=MRI-Documented+Improvement+in+Osteochondral+Lesions+Following+Collagen+Peptide+Supplementation"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Goncalves+2017+collagen+peptides+osteochondral+lesion+MRI+athlete"
     },
     {
       "id": "zdzieblik2021_joint",
-      "title": "Specific Collagen Peptides Reduce Knee Joint Discomfort in Young Physically Active Adults",
+      "title": "The Influence of Specific Bioactive Collagen Peptides on Knee Joint Discomfort in Young Physically Active Adults: A Randomized Controlled Trial",
       "authors": "Zdzieblik et al.",
       "journal": "Nutrients",
       "year": 2021,
       "brand": "FORTIGEL",
       "tags": ["膝關節", "年輕成人", "替代療法減少"],
-      "summary": "180名運動男女（18-30歲），每天5克持續12周。活動性膝關節疼痛組間比較顯著減少，使用替代疼痛緩解療法（繃帶、物理治療）兩組均顯著減少。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/33423023/"
+      "summary": "180名運動男女（18-30歲），每天5克持續12周。活動性膝關節疼痛組間比較顯著減少（−21.9mm vs −15.6mm），使用替代疼痛緩解療法（繃帶、物理治療）兩組均顯著減少。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/33562729/"
     },
     {
-      "id": "pmid_38928934",
+      "id": "schulze2024",
       "title": "Impact of Specific Bioactive Collagen Peptides on Joint Discomforts in the Lower Extremity during Daily Activities: A Randomized Controlled Trial",
       "authors": "Schulze et al.",
       "journal": "International Journal of Environmental Research and Public Health",
       "year": 2024,
       "brand": "FORTIGEL",
-      "tags": ["功能性疼痛", "膝關節", "髖關節"],
-      "summary": "154名受試者每日服用5g持續12周。結果顯示在日常活動（爬樓梯、跪下、蹲下）中膝關節與髖關節的功能性疼痛顯著減少。底層機制為特異性胜肽信號刺激軟骨細胞外基質合成。",
+      "tags": ["功能性疼痛", "膝關節", "髖關節", "日常活動"],
+      "summary": "154名男女（平均年齡50歲），每天5克持續12周。正常日常活動中膝關節和髖關節功能性疼痛顯著減少，醫師評估休息時疼痛（p=0.018）和行走時疼痛（p=0.032）均下降，受試者報告爬樓梯、跪下、蹲下時疼痛顯著減少。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38928934/"
     },
+
     {
       "id": "konig2018",
-      "title": "Specific Collagen Peptides Improve Bone Mineral Density and Bone Markers in Postmenopausal Women",
+      "title": "Specific Collagen Peptides Improve Bone Mineral Density and Bone Markers in Postmenopausal Women—A Randomized Controlled Study",
       "authors": "König et al.",
       "journal": "Nutrients",
       "year": 2018,
@@ -164,132 +168,145 @@
       "brand": "FORTIBONE",
       "tags": ["骨癒合", "骨折", "術後恢復", "79%有效"],
       "summary": "28名骨折患者（年齡17至87歲），每天10克持續30至90天。FORTIBONE®組79%的人有「非常好」或「好」的結果，安慰劑組僅50%；無論骨折類型如何，臨床結果均有改善。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/30026671/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Knefeli+Mueller-Autz+2018+collagen+peptides+bone+healing+orthopedic"
     },
     {
-      "id": "argyrou2019",
-      "title": "Effect of Specific Collagen Peptides Combined with Calcium and Vitamin D on Bone Turnover Markers",
+      "id": "argyrou2020",
+      "title": "Effect of calcium and vitamin D supplementation with and without collagen peptides on bone turnover in postmenopausal women with osteopenia",
       "authors": "Argyrou et al.",
-      "journal": "Open Journal of Endocrine and Metabolic Diseases",
-      "year": 2019,
+      "journal": "Journal of Musculoskeletal and Neuronal Interactions",
+      "year": 2020,
       "brand": "FORTIBONE",
       "tags": ["骨轉換標誌物", "鈣", "維生素D", "骨質流失"],
       "summary": "51名絕經後骨質減少婦女（平均年齡62歲），每天5克+500毫克鈣+400IU維生素D持續3個月。與單獨鈣+維生素D相比，FORTIBONE®顯著改善骨轉換標誌物，表明骨質流失顯著減少。",
-      "pubmedUrl": "https://scholar.google.com/scholar?q=Effect+of+Specific+Collagen+Peptides+Combined+with+Calcium+and+Vitamin+D+on+Bone+Turnover+Markers"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/32131366/"
     },
     {
       "id": "zdzieblik2021_bone",
-      "title": "Long-Term Effects of Specific Collagen Peptide Supplementation on Bone Mineral Density in Postmenopausal Women",
+      "title": "Specific Bioactive Collagen Peptides in Osteopenia and Osteoporosis: Long-Term Observation in Postmenopausal Women",
       "authors": "Zdzieblik et al.",
-      "journal": "Nutrients",
+      "journal": "Journal of Bone Metabolism",
       "year": 2021,
       "brand": "FORTIBONE",
       "tags": ["長期BMD", "3年追蹤", "無骨折", "骨質疏鬆預防"],
       "summary": "對König 2018研究中31名絕經後婦女進行3年開放標籤追蹤。脊柱BMD持續增加5.79%至8.16%，股骨頸BMD增加1.23%至4.21%；7%的改善具臨床意義（使參與者免於骨質疏鬆閾值），4年追蹤期間未觀察到骨折。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/34371911/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/34520654/"
     },
     {
       "id": "lampropoulou2021",
-      "title": "Effect of Collagen Supplementation on Bone Volumetric Mineral Density and Bone Matrix",
+      "title": "Effect of Calcium and Vitamin D Supplementation With and Without Collagen Peptides on Volumetric and Areal Bone Mineral Density, Bone Geometry and Bone Turnover in Postmenopausal Women With Osteopenia",
       "authors": "Lampropoulou-Adamidou et al.",
-      "journal": "Nutrients",
+      "journal": "Journal of Clinical Densitometry",
       "year": 2021,
       "brand": "FORTIBONE",
       "tags": ["vBMD", "骨小梁", "BMC", "真實骨密度"],
       "summary": "45名絕經後女性（平均年齡62歲），每天5克+500毫克鈣+400IU維生素D持續12個月。非優勢脛骨體積骨礦物質密度（vBMD）顯著提高約2.5%，骨小梁骨礦物質含量（BMC）顯著提高約5%，維持腰椎骨密度，改善骨轉換標誌物。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/34111306/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/34980546/"
     },
+
     {
       "id": "zdzieblik2015",
-      "title": "Collagen Peptide Supplementation in Combination with Resistance Training Improves Body Composition in Elderly Sarcopenic Men",
+      "title": "Collagen peptide supplementation in combination with resistance training improves body composition and increases muscle strength in elderly sarcopenic men: a randomised controlled trial",
       "authors": "Zdzieblik et al.",
       "journal": "British Journal of Nutrition",
       "year": 2015,
       "brand": "BODYBALANCE",
       "tags": ["肌少症", "老年男性", "DXA", "阻力訓練"],
-      "summary": "53名老年男性（平均年齡72±5歲），每天15克配合每週3次阻力訓練，持續12周。瘦體重顯著增加，脂肪量顯著下降，與安慰劑組相比腿部伸展力量（股四頭肌）顯著增強。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/26175902/"
+      "summary": "53名老年男性（平均年齡72±5歲），每天15克配合每週3次阻力訓練，持續12周。瘦體重顯著增加（+4.2kg vs +2.9kg），脂肪量顯著下降（−5.4kg vs −3.5kg），與安慰劑組相比股四頭肌力量顯著增強（+16.5Nm vs +7.3Nm）。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/26353786/"
     },
     {
       "id": "jendricke2019",
-      "title": "Specific Collagen Peptides Improve Body Composition in Premenopausal Women",
+      "title": "Specific Collagen Peptides in Combination with Resistance Training Improve Body Composition and Regional Muscle Strength in Premenopausal Women: A Randomized Controlled Trial",
       "authors": "Jendricke et al.",
       "journal": "Nutrients",
       "year": 2019,
       "brand": "BODYBALANCE",
       "tags": ["女性體態", "BIA", "握力增強"],
       "summary": "77名18至50歲絕經前女性，每天15克配合阻力訓練持續12周。瘦體重顯著增加，脂肪量顯著下降，與安慰劑組相比握力顯著增強。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31091754/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31010031/"
+    },
+    {
+      "id": "kirmse2019",
+      "title": "Prolonged Collagen Peptide Supplementation and Resistance Exercise Training Affects Body Composition in Recreationally Active Men",
+      "authors": "Kirmse et al.",
+      "journal": "Nutrients",
+      "year": 2019,
+      "brand": "BODYBALANCE",
+      "tags": ["年輕運動員", "BIA", "深蹲力量"],
+      "summary": "57名年輕活躍男性（平均年齡24±3歲），每天15克配合阻力訓練持續12周。瘦體重顯著增加，脂肪量減少，與安慰劑組相比深蹲（力量）有增加的趨勢。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31126103/"
     },
     {
       "id": "oertzen2019",
-      "title": "Collagen Peptide Supplementation Upregulates Skeletal Muscle Proteome — 221 Proteins Up-regulated",
+      "title": "Effects of 12 Weeks of Hypertrophy Resistance Exercise Training Combined with Collagen Peptide Supplementation on the Skeletal Muscle Proteome in Recreationally Active Men",
       "authors": "Oertzen-Hagemann et al.",
-      "journal": "British Journal of Nutrition",
+      "journal": "Nutrients",
       "year": 2019,
       "brand": "BODYBALANCE",
       "tags": ["蛋白質組學", "221種蛋白質", "收縮纖維代謝"],
       "summary": "BODYBALANCE®組有221種蛋白質表達上調（安慰劑組僅44種），上調蛋白質大多與收縮纖維的代謝有關，揭示膠原蛋白胜肽促進肌肉重塑的分子機制。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31010031/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31091754/"
     },
     {
       "id": "zdzieblik2021_body",
-      "title": "BODYBALANCE Increases Lean Mass and Reduces Fat Mass in Middle-Aged Untrained Men",
+      "title": "The Influence of Specific Bioactive Collagen Peptides on Body Composition and Muscle Strength in Middle-Aged, Untrained Men: A Randomized Controlled Trial",
       "authors": "Zdzieblik et al.",
       "journal": "Nutrients",
       "year": 2021,
       "brand": "BODYBALANCE",
-      "tags": ["中年男性", "雙能X線", "瘦體重", "下肢力量"],
-      "summary": "97名未經訓練的中年男性（平均年齡50±6歲），每天15克配合阻力訓練持續12周。與安慰劑相比顯著增加瘦體重並減少脂肪量，下肢肌力增加幅度超過乳清蛋白組1.5倍，效果更為顯著。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/33919420/"
+      "tags": ["中年男性", "未受訓者", "下肢力量"],
+      "summary": "97名未受訓練的中年男性（平均年齡50±6歲），每天15克配合阻力訓練持續12周。與安慰劑相比顯著增加瘦體重並減少脂肪量，下肢肌力增加幅度超過乳清蛋白組1.5倍。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/33946565/"
     },
     {
       "id": "centner2022",
-      "title": "Specific Collagen Peptides Upregulate Anabolic Signalling Pathways (P13K-Akt / MAPK / mTOR) Following Resistance Exercise",
+      "title": "Supplementation of Specific Collagen Peptides Following High-Load Resistance Exercise Upregulates Gene Expression in Pathways Involved in Skeletal Muscle Signal Transduction",
       "authors": "Centner et al.",
-      "journal": "International Journal of Sport Nutrition and Exercise Metabolism",
+      "journal": "Frontiers in Physiology",
       "year": 2022,
       "brand": "BODYBALANCE",
       "tags": ["P13K-Akt", "MAPK", "mTOR", "肌肉信號通路", "肌肉活檢"],
       "summary": "30名業餘活躍男性（平均年齡25歲），運動後即服用15克。肌肉活檢顯示P13K-Akt、MAPK及mTOR三大合成代謝信號通路在運動後1、4、24小時均顯著提升，與肌肉力量增加和體重改善高度相關。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/35042189/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/35480041/"
     },
     {
       "id": "park2023",
-      "title": "Specific Collagen Peptide Supplementation Reduces Total Body Fat Mass in Older Adults (DXA)",
+      "title": "Low-Molecular Collagen Peptide Supplementation and Body Fat Mass in Adults Aged ≥ 50 Years: A Randomized, Double-Blind, Placebo-Controlled Trial",
       "authors": "Park et al.",
-      "journal": "Nutrients",
+      "journal": "Clinical Nutrition Research",
       "year": 2023,
       "brand": "BODYBALANCE",
       "tags": ["全身脂肪", "老年人", "DXA", "交叉設計"],
       "summary": "74名老年男女（平均年齡60歲），12周內每天飲用15克（交叉設計）。全身脂肪量顯著下降，DXA量測確認效果，為老年族群體態管理提供臨床依據。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37571340/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37969940/"
     },
     {
-      "id": "pmid_39501478",
+      "id": "aussieker2024",
       "title": "Ingestion of a Whey Plus Collagen Protein Blend Increases Myofibrillar and Muscle Connective Protein Synthesis Rates",
       "authors": "Aussieker et al.",
       "journal": "Medicine & Science in Sports & Exercise",
       "year": 2024,
       "brand": "BODYBALANCE",
-      "tags": ["肌原纖維", "結締組織蛋白", "同位素示蹤"],
-      "summary": "28名男性運動後服用BODYBALANCE 25/5配方。同位素示蹤證實，胜肽能顯著提升運動後靜息狀態下的肌原纖維蛋白（Myofibrillar protein）與肌肉結締組織蛋白的合成速率。",
+      "tags": ["EAA必需氨基酸", "甘氨酸", "肌原纖維蛋白", "混合配方"],
+      "summary": "乳清蛋白與BODYBALANCE 25/5克混合配方，對於運動後必需氨基酸（EAA）和甘氨酸的供應具顯著優勢；促進靜息狀態下肌原纖維蛋白和肌肉結締組織蛋白質合成速率顯著提升。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/39501478/"
     },
+
     {
       "id": "dressler2018",
-      "title": "Specific Collagen Peptides Improve Ankle Joint Stability and Reduce Injury Risk in Chronic Ankle Instability",
+      "title": "Improvement of Functional Ankle Properties Following Supplementation with Specific Collagen Peptides in Athletes with Chronic Ankle Instability",
       "authors": "Dressler et al.",
       "journal": "Journal of Sports Science & Medicine",
       "year": 2018,
       "brand": "TENDOFORTE",
       "tags": ["踝關節穩定", "受傷預防", "慢性不穩定", "跑步跳躍"],
       "summary": "50名患慢性踝關節不穩的活躍男女（年齡27±9歲），每天5克持續6個月。踝關節穩定性顯著增強，踝關節扭傷顯著減少，補充後3個月隨訪期內受傷發生率顯著降低，跑步、跳躍、落地、急停等運動顯著改善。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/29997457/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/29769831/"
     },
     {
       "id": "praet2019",
-      "title": "Oral Collagen Peptides Combined with Physical Training Promotes Return to Running in Chronic Achilles Tendinopathy",
+      "title": "Oral supplementation with collagen peptides combined with physical training promotes return to running in Achilles tendinopathy",
       "authors": "Praet et al.",
       "journal": "Nutrients",
       "year": 2019,
@@ -300,9 +317,9 @@
     },
     {
       "id": "jerger2022",
-      "title": "Specific Collagen Peptide Supplementation Increases Achilles Tendon Cross-Sectional Area (+11%)",
+      "title": "The Effect of Specific Bioactive Collagen Peptides on Tendon Remodeling during 15 wk of Lower Body Resistance Training",
       "authors": "Jerger et al.",
-      "journal": "European Journal of Sport Science",
+      "journal": "Medicine & Science in Sports & Exercise",
       "year": 2022,
       "brand": "TENDOFORTE",
       "tags": ["跟腱截面積+11%", "肌腱肥大", "蹠屈肌+7.3%"],
@@ -311,18 +328,19 @@
     },
     {
       "id": "jerger2023_tendo",
-      "title": "Collagen Peptides Uniformly Increase Achilles Tendon CSA and Support Tendon Adaptation",
+      "title": "Specific collagen peptide supplementation uniformly increases Achilles tendon cross-sectional area and reduces tendon stress",
       "authors": "Jerger et al.",
       "journal": "European Journal of Applied Physiology",
       "year": 2023,
       "brand": "TENDOFORTE",
       "tags": ["腱體CSA均勻增加", "肌腱強化", "膠原蛋白合成"],
       "summary": "50名健康活躍男性，每天5克持續14周。TENDOFORTE®均勻增加腱體橫截面積約11%（安慰劑約4.9%），在60%和70%腱長處差異顯著；增加的橫截面積可降低肌腱應力並支持肌腱癒合。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37424319/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Jerger+2023+collagen+peptides+Achilles+tendon+cross-sectional+area+stress+European"
     },
+
     {
       "id": "jendricke2020",
-      "title": "Specific Collagen Peptides Improve Running Performance (+331m) in Female Recreational Athletes",
+      "title": "Specific Collagen Peptides Improve Endurance Performance and Lean Body Mass in Trained Women",
       "authors": "Jendricke et al.",
       "journal": "Nutrients",
       "year": 2020,
@@ -333,69 +351,71 @@
     },
     {
       "id": "jerger2023_pept",
-      "title": "Specific Collagen Peptides Improve Running Performance (+662m) and Lactate Threshold in Male Athletes",
+      "title": "Effects of Specific Bioactive Collagen Peptides in Combination with Concurrent Training on Running Performance and Indicators of Endurance Capacity in Men: A Randomized Controlled Trial",
       "authors": "Jerger et al.",
-      "journal": "Sports",
+      "journal": "Nutrients",
       "year": 2023,
       "brand": "PeptENDURE",
       "tags": ["跑步距離+662m", "乳酸閾值", "脂肪代謝", "男性耐力"],
       "summary": "32名年輕活躍男性（平均年齡28±5歲），每天15克配合每週3次耐力訓練，持續12周。60分鐘跑步試驗距離顯著增加+662米，脂肪量顯著減少，乳酸閾值顯著提高（表明脂肪代謝增加）。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37040447/"
+      "pubmedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10630299/"
     },
     {
       "id": "bischof2023",
-      "title": "PeptENDURE + TENDOFORTE Blend Enhances Recovery Biomechanics: MVC, RFD, and CMJ Significantly Improved",
+      "title": "Influence of specific collagen peptides and 12-week concurrent training on recovery-related biomechanical characteristics following exercise-induced muscle damage",
       "authors": "Bischof et al.",
       "journal": "Journal of the International Society of Sports Nutrition",
       "year": 2023,
       "brand": "PeptENDURE",
       "tags": ["MVC最大收縮力", "力量發展速率RFD", "CMJ立定跳遠", "康復生物力學"],
       "summary": "55名主要久坐男性（平均年齡26.1±5.1歲），每天15克（PeptENDURE 10克+TENDOFORTE 5克），持續12周。最大自主收縮力（MVC）、力量發展速率（RFD）、立定跳遠高度（CMJ）在測量前後24和48小時均顯著增加。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37376991/"
+      "pubmedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10687431/"
     },
     {
       "id": "bischof2024",
-      "title": "PeptENDURE + TENDOFORTE Significantly Reduces Muscle Damage Markers Post-Exercise",
+      "title": "Reduction in systemic muscle stress markers after exercise-induced muscle damage following concurrent training and supplementation with specific collagen peptides",
       "authors": "Bischof et al.",
-      "journal": "Journal of the International Society of Sports Nutrition",
+      "journal": "Frontiers in Nutrition",
       "year": 2024,
       "brand": "PeptENDURE",
       "tags": ["肌肉損傷標誌物↓", "肌酸激酶", "乳酸脫氫酶", "2024最新"],
       "summary": "55名主要久坐男性，每天15克（PeptENDURE 10克+TENDOFORTE 5克），持續12周。全身肌肉壓力標誌物顯著下降，肌肉損傷標誌物（肌紅蛋白、肌酸激酶、乳酸脫氫酶）在0、24和48小時測量均顯著降低，表明運動後恢復能力顯著提升。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38435790/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38590831/"
     },
+
     {
       "id": "schunck2017_pet",
-      "title": "Specific Collagen Peptides Stimulate Chondrocyte ECM Synthesis and Reduce MMP Activity in Canine OA",
-      "authors": "Schunck et al.",
-      "journal": "Veterinary Dermatology",
+      "title": "The effectiveness of specific collagen peptides on osteoarthritis in dogs—impact on metabolic processes in canine chondrocytes",
+      "authors": "Schunck, Louton & Oesser",
+      "journal": "Open Journal of Animal Sciences",
       "year": 2017,
       "brand": "PETAGILE",
       "tags": ["犬類OA", "軟骨細胞ECM", "MMP抑制", "活力改善"],
       "summary": "體外研究及22只患骨關節炎中型犬，每天5克持續12周。II型膠原蛋白、聚集蛋白聚糖、彈性蛋白的mRNA表達和蛋白質合成顯著增加，炎症細胞因數和金屬蛋白酶（MMP）顯著減少，活力和日常活動顯著增加。",
-      "pubmedUrl": "https://www.scirp.org/journal/paperinformation?paperid=77445"
-    },
-    {
-      "id": "dobenecker2024",
-      "title": "Specific Collagen Peptides Improve Mobility Parameters and Quality of Life in Dogs with Osteoarthritis",
-      "authors": "Dobenecker et al.",
-      "journal": "Animals",
-      "year": 2024,
-      "brand": "PETAGILE",
-      "tags": ["犬類", "測力台", "峰值垂直力量", "生活品質", "2024最新"],
-      "summary": "31只患骨關節炎的狗（各體型），每天約200毫克PETAGILE®/千克體重持續12周。在配備測力台的跑步機上，PETAGILE組峰值垂直力量、垂直衝量、站立相持續時間顯著改善，生活品質顯著提高；安慰劑組所有測量參數均有惡化趨勢。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38612301/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Schunck+Louton+Oesser+2017+collagen+peptides+canine+chondrocyte+osteoarthritis"
     },
     {
       "id": "dobenecker2018",
-      "title": "Specific Collagen Peptide Supplementation Improves Gait and Reduces Lameness in Horses with Osteoarthritis",
+      "title": "Specific bioactive collagen peptides (PETAGILE®) as supplement for horses with osteoarthritis: A two-centred study",
       "authors": "Dobenecker et al.",
-      "journal": "Journal of Veterinary Pharmacology and Therapeutics",
+      "journal": "Journal of Animal Physiology and Animal Nutrition",
       "year": 2018,
       "brand": "PETAGILE",
       "tags": ["馬匹OA", "跛行改善", "步態", "多中心研究"],
       "summary": "38匹私人飼養的患骨關節炎馬（多中心研究），每天25克或50克持續12周。50克劑量在跛行、疼痛和活動能力（屈曲、旋轉、步長、足部飛行弧度）等多個骨科參數方面有顯著改善；25克劑量顯著變化主要在12周後出現。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/28625055/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/29623685/"
+    },
+    {
+      "id": "dobenecker2024",
+      "title": "The oral intake of specific Bioactive Collagen Peptides (BCP) improves gait and quality of life in canine osteoarthritis patients",
+      "authors": "Dobenecker et al.",
+      "journal": "PLoS One",
+      "year": 2024,
+      "brand": "PETAGILE",
+      "tags": ["犬類", "測力台", "峰值垂直力量", "生活品質", "2024最新"],
+      "summary": "31只患骨關節炎的狗（各體型），每天約200毫克PETAGILE®/千克體重持續12周。在配備測力台的跑步機上，PETAGILE組峰值垂直力量、垂直衝量、站立相持續時間顯著改善，生活品質顯著提高；安慰劑組所有測量參數均有惡化趨勢。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/39298537/"
     }
+
   ]
 }
