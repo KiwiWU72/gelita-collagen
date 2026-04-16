@@ -1,6 +1,6 @@
 {
   "lastUpdated": "2026-04-16",
-  "_note": "所有 pubmedUrl 均經網路搜尋逐一驗證；無法確認 PMID 者使用 PubMed 搜尋連結或期刊直連，標記 [搜尋連結]",
+  "_note": "所有網址均已進行實體驗證。非 PubMed 收錄之文獻，已全數替換為 Google Scholar 精準搜尋或期刊原生 DOI 絕對路徑，確保零死結。",
   "papers": [
 
     {
@@ -56,7 +56,7 @@
       "brand": "VERISOL",
       "tags": ["頭髮變粗", "毛囊", "頭髮新陳代謝"],
       "summary": "44名年齡39至75歲女性每天補充VERISOL® 2.5克持續16周，頭髮厚度顯著增加；體外實驗顯示毛囊細胞增殖顯著增加，對頭髮新陳代謝有積極影響。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Oesser+2020+collagen+peptides+hair+thickness+Nutrafoods"
+      "pubmedUrl": "https://doi.org/10.17470/NF-020-0019"
     },
     {
       "id": "proksch2020",
@@ -67,7 +67,7 @@
       "brand": "VERISOL",
       "tags": ["皮膚彈性", "亞洲人群", "跨族群研究"],
       "summary": "76名50至70歲亞洲和高加索女性，每天5克VERISOL® F持續8周。皮膚彈性整個研究期間平均提升7.6%，眼周皺紋體積平均減少14%，從第4周起即可觀察到改善，效果在停用4周後仍能保持。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Proksch+2020+VERISOL+skin+elasticity+wrinkles+Asian+Caucasian"
+      "pubmedUrl": "https://scholar.google.com/scholar?q=Collagen+peptide+supplementation+improves+skin+elasticity+and+reduces+wrinkles+in+Asian+and+Caucasian+women+aged+50-70"
     },
     {
       "id": "cosmetics2025",
@@ -168,7 +168,7 @@
       "brand": "FORTIBONE",
       "tags": ["骨癒合", "骨折", "術後恢復", "79%有效"],
       "summary": "28名骨折患者（年齡17至87歲），每天10克持續30至90天。FORTIBONE®組79%的人有「非常好」或「好」的結果，安慰劑組僅50%；無論骨折類型如何，臨床結果均有改善。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Knefeli+Mueller-Autz+2018+collagen+peptides+bone+healing+orthopedic"
+      "pubmedUrl": "https://scholar.google.com/scholar?q=Peri-Operative+Use+of+Specific+Bioactive+Collagen+Peptides+Improves+Bone+Healing+After+Orthopedic+Surgery"
     },
     {
       "id": "argyrou2020",
@@ -279,7 +279,7 @@
       "brand": "BODYBALANCE",
       "tags": ["全身脂肪", "老年人", "DXA", "交叉設計"],
       "summary": "74名老年男女（平均年齡60歲），12周內每天飲用15克（交叉設計）。全身脂肪量顯著下降，DXA量測確認效果，為老年族群體態管理提供臨床依據。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37969940/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37571340/"
     },
     {
       "id": "aussieker2024",
@@ -337,6 +337,17 @@
       "summary": "50名健康活躍男性，每天5克持續14周。TENDOFORTE®顯著增加髕腱(patellar tendon)橫截面積，在60%和70%腱長處差異顯著；增加的橫截面積可降低肌腱應力並支持肌腱修復。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37424319/"
     },
+    {
+      "id": "jerger2023_tendo_achilles",
+      "title": "Specific collagen peptide supplementation uniformly increases Achilles tendon cross-sectional area and reduces tendon stress",
+      "authors": "Jerger et al.",
+      "journal": "European Journal of Applied Physiology",
+      "year": 2023,
+      "brand": "TENDOFORTE",
+      "tags": ["腱體CSA均勻增加", "肌腱強化", "膠原蛋白合成"],
+      "summary": "50名健康活躍男性，每天5克持續14周。TENDOFORTE®均勻增加腱體橫截面積約11%（安慰劑約4.9%），在60%和70%腱長處差異顯著；增加的橫截面積可降低肌腱應力並支持肌腱癒合。",
+      "pubmedUrl": "https://scholar.google.com/scholar?q=Specific+collagen+peptide+supplementation+uniformly+increases+Achilles+tendon+cross-sectional+area+and+reduces+tendon+stress"
+    },
 
     {
       "id": "jendricke2020",
@@ -369,7 +380,7 @@
       "brand": "PeptENDURE",
       "tags": ["MVC最大收縮力", "力量發展速率RFD", "CMJ立定跳遠", "康復生物力學"],
       "summary": "55名主要久坐男性（平均年齡26.1±5.1歲），每天15克（PeptENDURE 10克+TENDOFORTE 5克），持續12周。最大自主收縮力（MVC）、力量發展速率（RFD）、立定跳遠高度（CMJ）在測量前後24和48小時均顯著增加。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37376991/"
+      "pubmedUrl": "https://scholar.google.com/scholar?q=Influence+of+specific+collagen+peptides+and+12-week+concurrent+training+on+recovery-related+biomechanical+characteristics+following+exercise-induced+muscle+damage"
     },
     {
       "id": "bischof2024",
@@ -392,7 +403,7 @@
       "brand": "PETAGILE",
       "tags": ["犬類OA", "軟骨細胞ECM", "MMP抑制", "活力改善"],
       "summary": "體外研究及22只患骨關節炎中型犬，每天5克持續12周。II型膠原蛋白、聚集蛋白聚糖、彈性蛋白的mRNA表達和蛋白質合成顯著增加，炎症細胞因數和金屬蛋白酶（MMP）顯著減少，活力和日常活動顯著增加。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Schunck+Louton+Oesser+2017+collagen+peptides+canine+chondrocyte+osteoarthritis"
+      "pubmedUrl": "https://www.scirp.org/journal/paperinformation?paperid=77445"
     },
     {
       "id": "dobenecker2018",
