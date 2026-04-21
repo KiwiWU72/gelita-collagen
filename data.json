@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-16",
-  "_note": "所有網址均已進行實體驗證。非 PubMed 收錄之文獻，已全數替換為 Google Scholar 精準搜尋或期刊原生 DOI 絕對路徑，確保零死結。",
+  "lastUpdated": "2026-04-22",
+  "_note": "所有 pubmedUrl 均經網路搜尋逐一驗證；無法確認 PMID 者使用 PubMed 搜尋連結或期刊直連，標記 [搜尋連結]",
   "papers": [
 
     {
@@ -49,25 +49,25 @@
     },
     {
       "id": "oesser2020",
-      "title": "The oral intake of specific bioactive collagen peptides has a positive effect on hair thickness",
+      "title": "The oral intake of specific Bioactive Collagen Peptides has a positive effect on hair thickness",
       "authors": "Oesser",
       "journal": "Nutrafoods",
       "year": 2020,
       "brand": "VERISOL",
       "tags": ["頭髮變粗", "毛囊", "頭髮新陳代謝"],
-      "summary": "44名年齡39至75歲女性每天補充VERISOL® 2.5克持續16周，頭髮厚度顯著增加；體外實驗顯示毛囊細胞增殖顯著增加，對頭髮新陳代謝有積極影響。",
-      "pubmedUrl": "https://doi.org/10.17470/NF-020-0019"
+      "summary": "44名年齡39至75歲女性每天補充VERISOL® 2.5克持續16周，頭髮厚度顯著增加（+1.93μm，p<0.01）；體外實驗顯示毛囊細胞增殖顯著增加31%（p<0.01），對頭髮新陳代謝有積極影響。",
+      "pubmedUrl": "https://www.nutrafoods.eu/index.php/nutra/article/view/9"
     },
     {
       "id": "proksch2020",
-      "title": "Collagen peptide supplementation improves skin elasticity and reduces wrinkles in Asian and Caucasian women aged 50-70",
-      "authors": "Proksch et al.",
-      "journal": "Skin Pharmacology and Physiology",
+      "title": "Positive effect of fish-derived Bioactive Collagen Peptides on skin health",
+      "authors": "Proksch, Schunck & Oesser",
+      "journal": "Nutrafoods",
       "year": 2020,
       "brand": "VERISOL",
-      "tags": ["皮膚彈性", "亞洲人群", "跨族群研究"],
-      "summary": "76名50至70歲亞洲和高加索女性，每天5克VERISOL® F持續8周。皮膚彈性整個研究期間平均提升7.6%，眼周皺紋體積平均減少14%，從第4周起即可觀察到改善，效果在停用4周後仍能保持。",
-      "pubmedUrl": "https://scholar.google.com/scholar?q=Collagen+peptide+supplementation+improves+skin+elasticity+and+reduces+wrinkles+in+Asian+and+Caucasian+women+aged+50-70"
+      "tags": ["皮膚彈性", "亞洲人群", "跨族群研究", "魚源性BCP"],
+      "summary": "76名亞洲和高加索女性（平均年齡62.2±8.2歲），每天5克VERISOL® F（魚源性）持續8周。第4周即觀察到皮膚彈性顯著提升，8周後眼周皺紋體積減少15%；亞裔與高加索人無顯著差異，效果在停用4周後仍能維持。",
+      "pubmedUrl": "https://www.nutrafoods.eu/index.php/nutra/article/view/8"
     },
     {
       "id": "cosmetics2025",
@@ -116,14 +116,14 @@
     },
     {
       "id": "goncalves2017",
-      "title": "Impact of collagen hydrolysate in middle-aged athletes with knee and ankle osteochondral lesions: A case series",
+      "title": "MRI-Documented Improvement in Osteochondral Lesions Following Collagen Peptide Supplementation",
       "authors": "Gonçalves",
-      "journal": "International Journal of Case Reports and Images",
+      "journal": "Orthopedic Case Reports",
       "year": 2017,
       "brand": "FORTIGEL",
       "tags": ["OCL", "骨軟骨病變", "MRI", "運動員復出"],
       "summary": "3名成年男性（30歲、42歲和43歲），每日10克持續3至16個月。MRI記錄骨軟骨病變的改善或穩定、關節面恢復，實現功能恢復和完全恢復比賽水準。",
-      "pubmedUrl": "https://scholar.google.com/scholar?q=Impact+of+collagen+hydrolysate+in+middle-aged+athletes+with+knee+and+ankle+osteochondral+lesions:+A+case+series"
+      "pubmedUrl": "https://scholar.google.com/scholar?q=Gon%C3%A7alves+2017+collagen+peptides+osteochondral+lesion+MRI+athlete"
     },
     {
       "id": "zdzieblik2021_joint",
@@ -161,14 +161,14 @@
     },
     {
       "id": "knefeli2018",
-      "title": "Peri-Operative Use of Specific Bioactive Collagen Peptides Improves Bone Healing After Orthopedic Surgery",
+      "title": "Improved bone healing after oral application of specific bioactive collagen peptides",
       "authors": "Knefeli & Mueller-Autz",
-      "journal": "International Journal of Medical Sciences",
+      "journal": "Nutrafoods",
       "year": 2018,
       "brand": "FORTIBONE",
       "tags": ["骨癒合", "骨折", "術後恢復", "79%有效"],
       "summary": "28名骨折患者（年齡17至87歲），每天10克持續30至90天。FORTIBONE®組79%的人有「非常好」或「好」的結果，安慰劑組僅50%；無論骨折類型如何，臨床結果均有改善。",
-      "pubmedUrl": "https://scholar.google.com/scholar?q=Peri-Operative+Use+of+Specific+Bioactive+Collagen+Peptides+Improves+Bone+Healing+After+Orthopedic+Surgery"
+      "pubmedUrl": "https://www.nutrafoods.eu/index.php/nutra/article/view/47"
     },
     {
       "id": "argyrou2020",
@@ -279,7 +279,7 @@
       "brand": "BODYBALANCE",
       "tags": ["全身脂肪", "老年人", "DXA", "交叉設計"],
       "summary": "74名老年男女（平均年齡60歲），12周內每天飲用15克（交叉設計）。全身脂肪量顯著下降，DXA量測確認效果，為老年族群體態管理提供臨床依據。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37571340/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37969940/"
     },
     {
       "id": "aussieker2024",
@@ -317,14 +317,14 @@
     },
     {
       "id": "jerger2022",
-      "title": "Effects of specific collagen peptide supplementation combined with resistance training on Achilles tendon properties",
+      "title": "The Effect of Specific Bioactive Collagen Peptides on Tendon Remodeling during 15 wk of Lower Body Resistance Training",
       "authors": "Jerger et al.",
-      "journal": "European Journal of Sport Science",
+      "journal": "Medicine & Science in Sports & Exercise",
       "year": 2022,
       "brand": "TENDOFORTE",
       "tags": ["跟腱截面積+11%", "肌腱肥大", "蹠屈肌+7.3%"],
       "summary": "40名18至40歲健康活躍男性，每天5克持續14周，結合抗阻訓練。TENDOFORTE®顯著增加跟腱橫截面積+11%（安慰劑僅+4.7%），蹠屈肌厚度+7.3%；兩組肌腱硬度和肌肉力量均有所增加。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/35403756/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37436929/"
     },
     {
       "id": "jerger2023_tendo",
@@ -333,8 +333,8 @@
       "journal": "European Journal of Sport Science",
       "year": 2023,
       "brand": "TENDOFORTE",
-      "tags": ["髕腱CSA增加", "肌腱強化", "膠原蛋白合成"],
-      "summary": "50名健康活躍男性，每天5克持續14周。TENDOFORTE®顯著增加髕腱(patellar tendon)橫截面積，在60%和70%腱長處差異顯著；增加的橫截面積可降低肌腱應力並支持肌腱修復。",
+      "tags": ["髕腱形態", "肌腱肥大", "高負荷訓練", "14周RCT"],
+      "summary": "50名健康活躍男性，每天5克持續14周高負荷阻力訓練。TENDOFORTE®組髕骨肌腱形態適應顯著優於安慰劑組，肌腱橫截面積增加更為明顯，支持膠原蛋白胜肽促進肌腱重塑的機制。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37424319/"
     },
     {
@@ -344,9 +344,9 @@
       "journal": "European Journal of Applied Physiology",
       "year": 2023,
       "brand": "TENDOFORTE",
-      "tags": ["腱體CSA均勻增加", "肌腱強化", "膠原蛋白合成"],
+      "tags": ["腱體CSA均勻增加", "肌腱強化", "肌腱應力降低"],
       "summary": "50名健康活躍男性，每天5克持續14周。TENDOFORTE®均勻增加腱體橫截面積約11%（安慰劑約4.9%），在60%和70%腱長處差異顯著；增加的橫截面積可降低肌腱應力並支持肌腱癒合。",
-      "pubmedUrl": "https://scholar.google.com/scholar?q=Specific+collagen+peptide+supplementation+uniformly+increases+Achilles+tendon+cross-sectional+area+and+reduces+tendon+stress"
+      "pubmedUrl": "https://scholar.google.com/scholar?q=Jerger+2023+collagen+peptides+Achilles+tendon+cross-sectional+area+uniformly+reduces+tendon+stress"
     },
 
     {
@@ -364,12 +364,12 @@
       "id": "jerger2023_pept",
       "title": "Effects of Specific Bioactive Collagen Peptides in Combination with Concurrent Training on Running Performance and Indicators of Endurance Capacity in Men: A Randomized Controlled Trial",
       "authors": "Jerger et al.",
-      "journal": "Sports Medicine - Open",
+      "journal": "Nutrients",
       "year": 2023,
       "brand": "PeptENDURE",
       "tags": ["跑步距離+662m", "乳酸閾值", "脂肪代謝", "男性耐力"],
       "summary": "32名年輕活躍男性（平均年齡28±5歲），每天15克配合每週3次耐力訓練，持續12周。60分鐘跑步試驗距離顯著增加+662米，脂肪量顯著減少，乳酸閾值顯著提高（表明脂肪代謝增加）。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37935999/"
+      "pubmedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10630299/"
     },
     {
       "id": "bischof2023",
@@ -380,7 +380,7 @@
       "brand": "PeptENDURE",
       "tags": ["MVC最大收縮力", "力量發展速率RFD", "CMJ立定跳遠", "康復生物力學"],
       "summary": "55名主要久坐男性（平均年齡26.1±5.1歲），每天15克（PeptENDURE 10克+TENDOFORTE 5克），持續12周。最大自主收縮力（MVC）、力量發展速率（RFD）、立定跳遠高度（CMJ）在測量前後24和48小時均顯著增加。",
-      "pubmedUrl": "https://scholar.google.com/scholar?q=Influence+of+specific+collagen+peptides+and+12-week+concurrent+training+on+recovery-related+biomechanical+characteristics+following+exercise-induced+muscle+damage"
+      "pubmedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10687431/"
     },
     {
       "id": "bischof2024",
@@ -403,7 +403,7 @@
       "brand": "PETAGILE",
       "tags": ["犬類OA", "軟骨細胞ECM", "MMP抑制", "活力改善"],
       "summary": "體外研究及22只患骨關節炎中型犬，每天5克持續12周。II型膠原蛋白、聚集蛋白聚糖、彈性蛋白的mRNA表達和蛋白質合成顯著增加，炎症細胞因數和金屬蛋白酶（MMP）顯著減少，活力和日常活動顯著增加。",
-      "pubmedUrl": "https://www.scirp.org/journal/paperinformation?paperid=77445"
+      "pubmedUrl": "https://scholar.google.com/scholar?q=Schunck+Louton+Oesser+2017+collagen+peptides+canine+chondrocyte+osteoarthritis+PETAGILE"
     },
     {
       "id": "dobenecker2018",
