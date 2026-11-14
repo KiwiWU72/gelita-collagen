@@ -1,8 +1,52 @@
 {
-  "lastUpdated": "2026-04-22",
+  "lastUpdated": "2026-11-14",
   "_note": "所有 pubmedUrl 均經網路搜尋逐一驗證；無法確認 PMID 者使用 PubMed 搜尋連結或期刊直連，標記 [搜尋連結]",
   "papers": [
-
+    {
+      "id": "jerger2026",
+      "title": "Specific collagen peptides supplementation increases collagen type I content in skeletal muscle after 12 weeks of high-load resistance training: a randomized controlled trial",
+      "authors": "Jerger, Nielsen, Centner et al.",
+      "journal": "Frontiers in Physiology",
+      "year": 2026,
+      "brand": "BODYBALANCE",
+      "tags": [
+        "肌內膠原Type I +29.8%",
+        "肌內結締組織",
+        "2026最新"
+      ],
+      "summary": "29名健康男性，每天BODYBALANCE® 15克配合12周高負荷阻力訓練（雙盲RCT）。肌內膜（endomysial）第一型膠原蛋白含量增加29.8%，安慰劑組僅+9.9%，約3.5倍；同時分析第III、IV型膠原。",
+      "pubmedUrl": "https://doi.org/10.3389/fphys.2026.1839695"
+    },
+    {
+      "id": "balshaw2023_muscle",
+      "title": "The effect of specific bioactive collagen peptides on function and muscle remodeling during human resistance training",
+      "authors": "Balshaw et al.",
+      "journal": "Acta Physiologica",
+      "year": 2023,
+      "brand": "BODYBALANCE",
+      "tags": [
+        "股四頭肌體積+15.2%",
+        "肌肉重塑",
+        "獨立實驗室"
+      ],
+      "summary": "39名年輕健康男性，每天15克（BODYBALANCE® 10克＋TENDOFORTE® 5克）配合15周下肢阻力訓練。股四頭肌體積+15.2%（安慰劑+10.3%）、總肌肉體積+15.7%（+11.4%），但最大肌力組間無差異。",
+      "pubmedUrl": "https://doi.org/10.1111/apha.13903"
+    },
+    {
+      "id": "balshaw2023_tendon",
+      "title": "The Effect of Specific Bioactive Collagen Peptides on Tendon Remodeling during 15 wk of Lower Body Resistance Training",
+      "authors": "Balshaw et al.",
+      "journal": "Medicine & Science in Sports & Exercise",
+      "year": 2023,
+      "brand": "TENDOFORTE",
+      "tags": [
+        "髕腱",
+        "陰性結果",
+        "15克/日"
+      ],
+      "summary": "同一批39名男性，每天15克（BODYBALANCE® 10克＋TENDOFORTE® 5克）配合15周阻力訓練。髕腱截面積、硬度、楊氏模量等肌腱指標兩組皆改善，但組間無顯著差異——此研究未觀察到額外的肌腱重塑效果，可與Jerger 2022/2023對照閱讀。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37436929/"
+    },
     {
       "id": "proksch2013",
       "title": "Oral supplementation of specific collagen peptides has beneficial effects on human skin physiology: a double-blind, placebo-controlled study",
@@ -10,7 +54,11 @@
       "journal": "Skin Pharmacology and Physiology",
       "year": 2013,
       "brand": "VERISOL",
-      "tags": ["皮膚彈性", "抗老化", "劑量反應"],
+      "tags": [
+        "皮膚彈性",
+        "抗老化",
+        "劑量反應"
+      ],
       "summary": "69名35至55歲女性，每天服用VERISOL® 2.5克或5克，持續8周。補充2.5克四周後皮膚彈性顯著提升（平均+10%）；兩種劑量在四周和八周後均能提升皮膚彈性（平均+7%）。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/23949208/"
     },
@@ -21,7 +69,12 @@
       "journal": "Skin Pharmacology and Physiology",
       "year": 2014,
       "brand": "VERISOL",
-      "tags": ["皺紋減少", "纖維母細胞", "I型膠原蛋白", "彈性蛋白"],
+      "tags": [
+        "皺紋減少",
+        "纖維母細胞",
+        "I型膠原蛋白",
+        "彈性蛋白"
+      ],
       "summary": "114名45至65歲女性每日口服VERISOL® 2.5克持續8周。從第4周起眼周皺紋體積顯著減少（−7%），8周後高達−20%，相較對照組總計減少32%。8周後，I型前膠原蛋白增加65%，彈性蛋白增加18%。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/24401291/"
     },
@@ -32,7 +85,11 @@
       "journal": "Journal of Medicinal Food",
       "year": 2015,
       "brand": "VERISOL",
-      "tags": ["橘皮組織", "脂肪圓", "皮下脂肪密度"],
+      "tags": [
+        "橘皮組織",
+        "脂肪圓",
+        "皮下脂肪密度"
+      ],
       "summary": "105名24至50歲女性每天補充VERISOL® 2.5克持續6個月，脂肪圓程度顯著下降，大腿皮膚波紋度顯著降低，皮下脂肪密度提升，橘皮組織形態明顯改善。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/26561784/"
     },
@@ -43,7 +100,11 @@
       "journal": "Journal of Cosmetic Dermatology",
       "year": 2017,
       "brand": "VERISOL",
-      "tags": ["指甲生長", "脆弱指甲", "美容"],
+      "tags": [
+        "指甲生長",
+        "脆弱指甲",
+        "美容"
+      ],
       "summary": "25名26至50歲女性每天補充VERISOL® 2.5克持續6個月，指甲顯著增長（+12%），脆弱指甲狀況得到改善，指甲斷裂頻率明顯降低（−42%），停止補充後效果持續。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/28786550/"
     },
@@ -54,7 +115,11 @@
       "journal": "Nutrafoods",
       "year": 2020,
       "brand": "VERISOL",
-      "tags": ["頭髮變粗", "毛囊", "頭髮新陳代謝"],
+      "tags": [
+        "頭髮變粗",
+        "毛囊",
+        "頭髮新陳代謝"
+      ],
       "summary": "44名年齡39至75歲女性每天補充VERISOL® 2.5克持續16周，頭髮厚度顯著增加（+1.93μm，p<0.01）；體外實驗顯示毛囊細胞增殖顯著增加31%（p<0.01），對頭髮新陳代謝有積極影響。",
       "pubmedUrl": "https://www.nutrafoods.eu/index.php/nutra/article/view/9"
     },
@@ -65,22 +130,31 @@
       "journal": "Nutrafoods",
       "year": 2020,
       "brand": "VERISOL",
-      "tags": ["皮膚彈性", "亞洲人群", "跨族群研究", "魚源性BCP"],
+      "tags": [
+        "皮膚彈性",
+        "亞洲人群",
+        "跨族群研究",
+        "魚源性BCP"
+      ],
       "summary": "76名亞洲和高加索女性（平均年齡62.2±8.2歲），每天5克VERISOL® F（魚源性）持續8周。第4周即觀察到皮膚彈性顯著提升，8周後眼周皺紋體積減少15%；亞裔與高加索人無顯著差異，效果在停用4周後仍能維持。",
       "pubmedUrl": "https://www.nutrafoods.eu/index.php/nutra/article/view/8"
     },
     {
       "id": "cosmetics2025",
       "title": "The Oral Intake of Specific Bovine-Derived Bioactive Collagen Peptides Has a Stimulatory Effect on Dermal Matrix Synthesis and Improves Various Clinical Skin Parameters",
-      "authors": "Schunck & Oesser et al.",
+      "authors": "Proksch, Zdzieblik & Oesser",
       "journal": "Cosmetics",
       "year": 2025,
       "brand": "VERISOL",
-      "tags": ["皺紋−25%", "皮膚彈性+9%", "皮膚水分+26%", "2025最新"],
-      "summary": "66名35至55歲高加索女性每天服用2.5克牛源性SCPs持續8周。8周後眼周皺紋體積比安慰劑組顯著減少25%，皮膚彈性比安慰劑組提高9%，皮膚水分含量增加26%。",
+      "tags": [
+        "皺紋−25%",
+        "皮膚彈性+9%",
+        "皮膚水分+26%",
+        "2025最新"
+      ],
+      "summary": "66名35至55歲女性每天服用VERISOL® 2.5克（牛源SCPs）持續8周。8周後眼周皺紋體積較安慰劑組顯著減少25%，皮膚彈性提高9%，皮膚含水量增加26%（第4周已+18%）。",
       "pubmedUrl": "https://www.mdpi.com/2079-9284/12/2/79"
     },
-
     {
       "id": "clark2008",
       "title": "24-Week study on the use of collagen hydrolysate as a dietary supplement in athletes with activity-related joint pain",
@@ -88,7 +162,11 @@
       "journal": "Current Medical Research and Opinion",
       "year": 2008,
       "brand": "FORTIGEL",
-      "tags": ["關節疼痛", "運動員", "活動相關"],
+      "tags": [
+        "關節疼痛",
+        "運動員",
+        "活動相關"
+      ],
       "summary": "147名輕活躍男女（平均年齡20歲），每日服用FORTIGEL® 10g持續6個月。與活動相關的關節疼痛顯著下降，使用替代疼痛緩解療法（如按摩和冰袋）顯著減少。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/18416885/"
     },
@@ -99,7 +177,12 @@
       "journal": "Osteoarthritis and Cartilage",
       "year": 2011,
       "brand": "FORTIGEL",
-      "tags": ["軟骨再生", "dGEMRIC", "蛋白聚糖", "膝關節炎"],
+      "tags": [
+        "軟骨再生",
+        "dGEMRIC",
+        "蛋白聚糖",
+        "膝關節炎"
+      ],
       "summary": "30名早期膝關節炎患者（年齡≥49歲），每日10克持續48周（11個月）。dGEMRIC MRI顯示膝關節軟骨蛋白聚糖含量顯著提升，從第24周（6個月）開始觀察到顯著變化，為軟骨再生提供影像學證據。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/21251991/"
     },
@@ -110,7 +193,11 @@
       "journal": "Applied Physiology, Nutrition, and Metabolism",
       "year": 2017,
       "brand": "FORTIGEL",
-      "tags": ["關節疼痛", "年輕運動員", "5克有效"],
+      "tags": [
+        "關節疼痛",
+        "年輕運動員",
+        "5克有效"
+      ],
       "summary": "139名年輕活躍男女（平均年齡24歲），每天5克持續12周。與活動相關的關節疼痛顯著下降，使用替代疼痛緩解療法（藥物、繃帶、物理治療）顯著減少，確認5克/日為最低有效劑量。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/28177710/"
     },
@@ -121,7 +208,12 @@
       "journal": "Orthopedic Case Reports",
       "year": 2017,
       "brand": "FORTIGEL",
-      "tags": ["OCL", "骨軟骨病變", "MRI", "運動員復出"],
+      "tags": [
+        "OCL",
+        "骨軟骨病變",
+        "MRI",
+        "運動員復出"
+      ],
       "summary": "3名成年男性（30歲、42歲和43歲），每日10克持續3至16個月。MRI記錄骨軟骨病變的改善或穩定、關節面恢復，實現功能恢復和完全恢復比賽水準。",
       "pubmedUrl": "https://scholar.google.com/scholar?q=Gon%C3%A7alves+2017+collagen+peptides+osteochondral+lesion+MRI+athlete"
     },
@@ -132,7 +224,11 @@
       "journal": "Nutrients",
       "year": 2021,
       "brand": "FORTIGEL",
-      "tags": ["膝關節", "年輕成人", "替代療法減少"],
+      "tags": [
+        "膝關節",
+        "年輕成人",
+        "替代療法減少"
+      ],
       "summary": "180名運動男女（18-30歲），每天5克持續12周。活動性膝關節疼痛組間比較顯著減少（−21.9mm vs −15.6mm），使用替代疼痛緩解療法（繃帶、物理治療）兩組均顯著減少。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/33562729/"
     },
@@ -143,11 +239,15 @@
       "journal": "International Journal of Environmental Research and Public Health",
       "year": 2024,
       "brand": "FORTIGEL",
-      "tags": ["功能性疼痛", "膝關節", "髖關節", "日常活動"],
+      "tags": [
+        "功能性疼痛",
+        "膝關節",
+        "髖關節",
+        "日常活動"
+      ],
       "summary": "154名男女（平均年齡50歲），每天5克持續12周。正常日常活動中膝關節和髖關節功能性疼痛顯著減少，醫師評估休息時疼痛（p=0.018）和行走時疼痛（p=0.032）均下降，受試者報告爬樓梯、跪下、蹲下時疼痛顯著減少。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38928934/"
     },
-
     {
       "id": "konig2018",
       "title": "Specific Collagen Peptides Improve Bone Mineral Density and Bone Markers in Postmenopausal Women—A Randomized Controlled Study",
@@ -155,7 +255,11 @@
       "journal": "Nutrients",
       "year": 2018,
       "brand": "FORTIBONE",
-      "tags": ["骨密度BMD", "P1NP", "絕經後婦女"],
+      "tags": [
+        "骨密度BMD",
+        "P1NP",
+        "絕經後婦女"
+      ],
       "summary": "131名絕經後婦女（平均年齡64.3±7.2歲），每天5克持續12個月。脊柱骨密度顯著增加3%（安慰劑組下降1.3%），股骨頸骨密度顯著增加6.7%（安慰劑組下降1%），骨形成標誌物P1NP顯著提高。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/29337906/"
     },
@@ -166,7 +270,12 @@
       "journal": "Nutrafoods",
       "year": 2018,
       "brand": "FORTIBONE",
-      "tags": ["骨癒合", "骨折", "術後恢復", "79%有效"],
+      "tags": [
+        "骨癒合",
+        "骨折",
+        "術後恢復",
+        "79%有效"
+      ],
       "summary": "28名骨折患者（年齡17至87歲），每天10克持續30至90天。FORTIBONE®組79%的人有「非常好」或「好」的結果，安慰劑組僅50%；無論骨折類型如何，臨床結果均有改善。",
       "pubmedUrl": "https://www.nutrafoods.eu/index.php/nutra/article/view/47"
     },
@@ -177,7 +286,12 @@
       "journal": "Journal of Musculoskeletal and Neuronal Interactions",
       "year": 2020,
       "brand": "FORTIBONE",
-      "tags": ["骨轉換標誌物", "鈣", "維生素D", "骨質流失"],
+      "tags": [
+        "骨轉換標誌物",
+        "鈣",
+        "維生素D",
+        "骨質流失"
+      ],
       "summary": "51名絕經後骨質減少婦女（平均年齡62歲），每天5克+500毫克鈣+400IU維生素D持續3個月。與單獨鈣+維生素D相比，FORTIBONE®顯著改善骨轉換標誌物，表明骨質流失顯著減少。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/32131366/"
     },
@@ -188,7 +302,12 @@
       "journal": "Journal of Bone Metabolism",
       "year": 2021,
       "brand": "FORTIBONE",
-      "tags": ["長期BMD", "3年追蹤", "無骨折", "骨質疏鬆預防"],
+      "tags": [
+        "長期BMD",
+        "3年追蹤",
+        "無骨折",
+        "骨質疏鬆預防"
+      ],
       "summary": "對König 2018研究中31名絕經後婦女進行3年開放標籤追蹤。脊柱BMD持續增加5.79%至8.16%，股骨頸BMD增加1.23%至4.21%；7%的改善具臨床意義（使參與者免於骨質疏鬆閾值），4年追蹤期間未觀察到骨折。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/34520654/"
     },
@@ -199,11 +318,15 @@
       "journal": "Journal of Clinical Densitometry",
       "year": 2021,
       "brand": "FORTIBONE",
-      "tags": ["vBMD", "骨小梁", "BMC", "真實骨密度"],
+      "tags": [
+        "vBMD",
+        "骨小梁",
+        "BMC",
+        "真實骨密度"
+      ],
       "summary": "45名絕經後女性（平均年齡62歲），每天5克+500毫克鈣+400IU維生素D持續12個月。非優勢脛骨體積骨礦物質密度（vBMD）顯著提高約2.5%，骨小梁骨礦物質含量（BMC）顯著提高約5%，維持腰椎骨密度，改善骨轉換標誌物。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/34980546/"
     },
-
     {
       "id": "zdzieblik2015",
       "title": "Collagen peptide supplementation in combination with resistance training improves body composition and increases muscle strength in elderly sarcopenic men: a randomised controlled trial",
@@ -211,7 +334,12 @@
       "journal": "British Journal of Nutrition",
       "year": 2015,
       "brand": "BODYBALANCE",
-      "tags": ["肌少症", "老年男性", "DXA", "阻力訓練"],
+      "tags": [
+        "肌少症",
+        "老年男性",
+        "DXA",
+        "阻力訓練"
+      ],
       "summary": "53名老年男性（平均年齡72±5歲），每天15克配合每週3次阻力訓練，持續12周。瘦體重顯著增加（+4.2kg vs +2.9kg），脂肪量顯著下降（−5.4kg vs −3.5kg），與安慰劑組相比股四頭肌力量顯著增強（+16.5Nm vs +7.3Nm）。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/26353786/"
     },
@@ -222,7 +350,11 @@
       "journal": "Nutrients",
       "year": 2019,
       "brand": "BODYBALANCE",
-      "tags": ["女性體態", "BIA", "握力增強"],
+      "tags": [
+        "女性體態",
+        "BIA",
+        "握力增強"
+      ],
       "summary": "77名18至50歲絕經前女性，每天15克配合阻力訓練持續12周。瘦體重顯著增加，脂肪量顯著下降，與安慰劑組相比握力顯著增強。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31010031/"
     },
@@ -233,7 +365,11 @@
       "journal": "Nutrients",
       "year": 2019,
       "brand": "BODYBALANCE",
-      "tags": ["年輕運動員", "BIA", "深蹲力量"],
+      "tags": [
+        "年輕運動員",
+        "BIA",
+        "深蹲力量"
+      ],
       "summary": "57名年輕活躍男性（平均年齡24±3歲），每天15克配合阻力訓練持續12周。瘦體重顯著增加，脂肪量減少，與安慰劑組相比深蹲（力量）有增加的趨勢。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31126103/"
     },
@@ -244,7 +380,11 @@
       "journal": "Nutrients",
       "year": 2019,
       "brand": "BODYBALANCE",
-      "tags": ["蛋白質組學", "221種蛋白質", "收縮纖維代謝"],
+      "tags": [
+        "蛋白質組學",
+        "221種蛋白質",
+        "收縮纖維代謝"
+      ],
       "summary": "BODYBALANCE®組有221種蛋白質表達上調（安慰劑組僅44種），上調蛋白質大多與收縮纖維的代謝有關，揭示膠原蛋白胜肽促進肌肉重塑的分子機制。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31091754/"
     },
@@ -255,7 +395,11 @@
       "journal": "Nutrients",
       "year": 2021,
       "brand": "BODYBALANCE",
-      "tags": ["中年男性", "未受訓者", "下肢力量"],
+      "tags": [
+        "中年男性",
+        "未受訓者",
+        "下肢力量"
+      ],
       "summary": "97名未受訓練的中年男性（平均年齡50±6歲），每天15克配合阻力訓練持續12周。與安慰劑相比顯著增加瘦體重並減少脂肪量，下肢肌力增加幅度超過乳清蛋白組1.5倍。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/33946565/"
     },
@@ -266,7 +410,13 @@
       "journal": "Frontiers in Physiology",
       "year": 2022,
       "brand": "BODYBALANCE",
-      "tags": ["P13K-Akt", "MAPK", "mTOR", "肌肉信號通路", "肌肉活檢"],
+      "tags": [
+        "P13K-Akt",
+        "MAPK",
+        "mTOR",
+        "肌肉信號通路",
+        "肌肉活檢"
+      ],
       "summary": "30名業餘活躍男性（平均年齡25歲），運動後即服用15克。肌肉活檢顯示P13K-Akt、MAPK及mTOR三大合成代謝信號通路在運動後1、4、24小時均顯著提升，與肌肉力量增加和體重改善高度相關。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/35480041/"
     },
@@ -277,7 +427,12 @@
       "journal": "Clinical Nutrition Research",
       "year": 2023,
       "brand": "BODYBALANCE",
-      "tags": ["全身脂肪", "老年人", "DXA", "交叉設計"],
+      "tags": [
+        "全身脂肪",
+        "老年人",
+        "DXA",
+        "交叉設計"
+      ],
       "summary": "74名老年男女（平均年齡60歲），12周內每天飲用15克（交叉設計）。全身脂肪量顯著下降，DXA量測確認效果，為老年族群體態管理提供臨床依據。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37969940/"
     },
@@ -288,11 +443,15 @@
       "journal": "Medicine & Science in Sports & Exercise",
       "year": 2024,
       "brand": "BODYBALANCE",
-      "tags": ["EAA必需氨基酸", "甘氨酸", "肌原纖維蛋白", "混合配方"],
+      "tags": [
+        "EAA必需氨基酸",
+        "甘氨酸",
+        "肌原纖維蛋白",
+        "混合配方"
+      ],
       "summary": "乳清蛋白與BODYBALANCE 25/5克混合配方，對於運動後必需氨基酸（EAA）和甘氨酸的供應具顯著優勢；促進靜息狀態下肌原纖維蛋白和肌肉結締組織蛋白質合成速率顯著提升。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/39501478/"
     },
-
     {
       "id": "dressler2018",
       "title": "Improvement of Functional Ankle Properties Following Supplementation with Specific Collagen Peptides in Athletes with Chronic Ankle Instability",
@@ -300,31 +459,45 @@
       "journal": "Journal of Sports Science & Medicine",
       "year": 2018,
       "brand": "TENDOFORTE",
-      "tags": ["踝關節穩定", "受傷預防", "慢性不穩定", "跑步跳躍"],
+      "tags": [
+        "踝關節穩定",
+        "受傷預防",
+        "慢性不穩定",
+        "跑步跳躍"
+      ],
       "summary": "50名患慢性踝關節不穩的活躍男女（年齡27±9歲），每天5克持續6個月。踝關節穩定性顯著增強，踝關節扭傷顯著減少，補充後3個月隨訪期內受傷發生率顯著降低，跑步、跳躍、落地、急停等運動顯著改善。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/29769831/"
     },
     {
       "id": "praet2019",
-      "title": "Oral supplementation with collagen peptides combined with physical training promotes return to running in Achilles tendinopathy",
+      "title": "Oral Supplementation of Specific Collagen Peptides Combined with Calf-Strengthening Exercises Enhances Function and Reduces Pain in Achilles Tendinopathy Patients",
       "authors": "Praet et al.",
       "journal": "Nutrients",
       "year": 2019,
       "brand": "TENDOFORTE",
-      "tags": ["跟腱病", "恢復跑步", "復健", "2倍康復率"],
-      "summary": "8名因跟腱疼痛無法訓練的男跑者（年齡43±11歲），每天5克持續6個月。最初3個月TENDOFORTE®使兩倍於安慰劑的參與者康復（6人對3人）；6個月總計18名參與者有12人康復，TENDOFORTE®組康復數量仍是安慰劑組兩倍。",
+      "tags": [
+        "跟腱病",
+        "恢復跑步",
+        "復健",
+        "2倍康復率"
+      ],
+      "summary": "18名慢性跟腱病患者（交叉設計），每天TENDOFORTE®配合小腿離心強化訓練共6個月，3個月時互換組別。TENDOFORTE®加速VISA-A疼痛與功能改善，18人中12人在3個月內恢復跑步；作者註明為前導研究，需更大型試驗確認。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/30609761/"
     },
     {
       "id": "jerger2022",
-      "title": "The Effect of Specific Bioactive Collagen Peptides on Tendon Remodeling during 15 wk of Lower Body Resistance Training",
+      "title": "Effects of specific collagen peptide supplementation combined with resistance training on Achilles tendon properties",
       "authors": "Jerger et al.",
-      "journal": "Medicine & Science in Sports & Exercise",
+      "journal": "Scandinavian Journal of Medicine & Science in Sports",
       "year": 2022,
       "brand": "TENDOFORTE",
-      "tags": ["跟腱截面積+11%", "肌腱肥大", "蹠屈肌+7.3%"],
-      "summary": "40名18至40歲健康活躍男性，每天5克持續14周，結合抗阻訓練。TENDOFORTE®顯著增加跟腱橫截面積+11%（安慰劑僅+4.7%），蹠屈肌厚度+7.3%；兩組肌腱硬度和肌肉力量均有所增加。",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37436929/"
+      "tags": [
+        "跟腱截面積+11%",
+        "肌腱肥大",
+        "蹠屈肌+7.3%"
+      ],
+      "summary": "40名健康活躍男性（26.3±4.0歲），每天5克持續14周，結合高負荷阻力訓練。TENDOFORTE®組跟腱橫截面積+11.0%（安慰劑+4.7%，p=0.002），蹠屈肌厚度+7.3%（安慰劑+2.7%）；肌腱硬度與肌力兩組皆增加、組間無差異。",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/35403756/"
     },
     {
       "id": "jerger2023_tendo",
@@ -333,22 +506,15 @@
       "journal": "European Journal of Sport Science",
       "year": 2023,
       "brand": "TENDOFORTE",
-      "tags": ["髕腱形態", "肌腱肥大", "高負荷訓練", "14周RCT"],
+      "tags": [
+        "髕腱形態",
+        "肌腱肥大",
+        "高負荷訓練",
+        "14周RCT"
+      ],
       "summary": "50名健康活躍男性，每天5克持續14周高負荷阻力訓練。TENDOFORTE®組髕骨肌腱形態適應顯著優於安慰劑組，肌腱橫截面積增加更為明顯，支持膠原蛋白胜肽促進肌腱重塑的機制。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37424319/"
     },
-    {
-      "id": "jerger2023_tendo_achilles",
-      "title": "Specific collagen peptide supplementation uniformly increases Achilles tendon cross-sectional area and reduces tendon stress",
-      "authors": "Jerger et al.",
-      "journal": "European Journal of Applied Physiology",
-      "year": 2023,
-      "brand": "TENDOFORTE",
-      "tags": ["腱體CSA均勻增加", "肌腱強化", "肌腱應力降低"],
-      "summary": "50名健康活躍男性，每天5克持續14周。TENDOFORTE®均勻增加腱體橫截面積約11%（安慰劑約4.9%），在60%和70%腱長處差異顯著；增加的橫截面積可降低肌腱應力並支持肌腱癒合。",
-      "pubmedUrl": "https://scholar.google.com/scholar?q=Jerger+2023+collagen+peptides+Achilles+tendon+cross-sectional+area+uniformly+reduces+tendon+stress"
-    },
-
     {
       "id": "jendricke2020",
       "title": "Influence of Specific Collagen Peptides and Concurrent Training on Cardiometabolic Parameters and Performance Indices in Women: A Randomized Controlled Trial",
@@ -356,7 +522,12 @@
       "journal": "Frontiers in Nutrition",
       "year": 2020,
       "brand": "PeptENDURE",
-      "tags": ["跑步距離+331m", "有氧代謝", "無氧閾值IAT", "女性耐力"],
+      "tags": [
+        "跑步距離+331m",
+        "有氧代謝",
+        "無氧閾值IAT",
+        "女性耐力"
+      ],
       "summary": "59名年輕活躍女性（平均年齡26±5歲），每天15克配合每週3次耐力訓練，持續12周。60分鐘跑步試驗距離顯著增加+331米，去脂體重顯著增加，有氧代謝能力提高，心率和個體無氧閾值（IAT）改善。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/33330579/"
     },
@@ -367,7 +538,12 @@
       "journal": "Nutrients",
       "year": 2023,
       "brand": "PeptENDURE",
-      "tags": ["跑步距離+662m", "乳酸閾值", "脂肪代謝", "男性耐力"],
+      "tags": [
+        "跑步距離+662m",
+        "乳酸閾值",
+        "脂肪代謝",
+        "男性耐力"
+      ],
       "summary": "32名年輕活躍男性（平均年齡28±5歲），每天15克配合每週3次耐力訓練，持續12周。60分鐘跑步試驗距離顯著增加+662米，脂肪量顯著減少，乳酸閾值顯著提高（表明脂肪代謝增加）。",
       "pubmedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10630299/"
     },
@@ -375,12 +551,17 @@
       "id": "bischof2023",
       "title": "Influence of specific collagen peptides and 12-week concurrent training on recovery-related biomechanical characteristics following exercise-induced muscle damage",
       "authors": "Bischof et al.",
-      "journal": "Journal of the International Society of Sports Nutrition",
+      "journal": "Frontiers in Nutrition",
       "year": 2023,
       "brand": "PeptENDURE",
-      "tags": ["MVC最大收縮力", "力量發展速率RFD", "CMJ立定跳遠", "康復生物力學"],
+      "tags": [
+        "MVC最大收縮力",
+        "力量發展速率RFD",
+        "CMJ立定跳遠",
+        "康復生物力學"
+      ],
       "summary": "55名主要久坐男性（平均年齡26.1±5.1歲），每天15克（PeptENDURE 10克+TENDOFORTE 5克），持續12周。最大自主收縮力（MVC）、力量發展速率（RFD）、立定跳遠高度（CMJ）在測量前後24和48小時均顯著增加。",
-      "pubmedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10687431/"
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38035363/"
     },
     {
       "id": "bischof2024",
@@ -389,11 +570,15 @@
       "journal": "Frontiers in Nutrition",
       "year": 2024,
       "brand": "PeptENDURE",
-      "tags": ["肌肉損傷標誌物↓", "肌酸激酶", "乳酸脫氫酶", "2024最新"],
+      "tags": [
+        "肌肉損傷標誌物↓",
+        "肌酸激酶",
+        "乳酸脫氫酶",
+        "2024最新"
+      ],
       "summary": "55名主要久坐男性，每天15克（PeptENDURE 10克+TENDOFORTE 5克），持續12周。全身肌肉壓力標誌物顯著下降，肌肉損傷標誌物（肌紅蛋白、肌酸激酶、乳酸脫氫酶）在0、24和48小時測量均顯著降低，表明運動後恢復能力顯著提升。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38590831/"
     },
-
     {
       "id": "schunck2017_pet",
       "title": "The effectiveness of specific collagen peptides on osteoarthritis in dogs—impact on metabolic processes in canine chondrocytes",
@@ -401,7 +586,12 @@
       "journal": "Open Journal of Animal Sciences",
       "year": 2017,
       "brand": "PETAGILE",
-      "tags": ["犬類OA", "軟骨細胞ECM", "MMP抑制", "活力改善"],
+      "tags": [
+        "犬類OA",
+        "軟骨細胞ECM",
+        "MMP抑制",
+        "活力改善"
+      ],
       "summary": "體外研究及22只患骨關節炎中型犬，每天5克持續12周。II型膠原蛋白、聚集蛋白聚糖、彈性蛋白的mRNA表達和蛋白質合成顯著增加，炎症細胞因數和金屬蛋白酶（MMP）顯著減少，活力和日常活動顯著增加。",
       "pubmedUrl": "https://scholar.google.com/scholar?q=Schunck+Louton+Oesser+2017+collagen+peptides+canine+chondrocyte+osteoarthritis+PETAGILE"
     },
@@ -412,7 +602,12 @@
       "journal": "Journal of Animal Physiology and Animal Nutrition",
       "year": 2018,
       "brand": "PETAGILE",
-      "tags": ["馬匹OA", "跛行改善", "步態", "多中心研究"],
+      "tags": [
+        "馬匹OA",
+        "跛行改善",
+        "步態",
+        "多中心研究"
+      ],
       "summary": "38匹私人飼養的患骨關節炎馬（多中心研究），每天25克或50克持續12周。50克劑量在跛行、疼痛和活動能力（屈曲、旋轉、步長、足部飛行弧度）等多個骨科參數方面有顯著改善；25克劑量顯著變化主要在12周後出現。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/29623685/"
     },
@@ -423,10 +618,53 @@
       "journal": "PLoS One",
       "year": 2024,
       "brand": "PETAGILE",
-      "tags": ["犬類", "測力台", "峰值垂直力量", "生活品質", "2024最新"],
+      "tags": [
+        "犬類",
+        "測力台",
+        "峰值垂直力量",
+        "生活品質",
+        "2024最新"
+      ],
       "summary": "31只患骨關節炎的狗（各體型），每天約200毫克PETAGILE®/千克體重持續12周。在配備測力台的跑步機上，PETAGILE組峰值垂直力量、垂直衝量、站立相持續時間顯著改善，生活品質顯著提高；安慰劑組所有測量參數均有惡化趨勢。",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/39298537/"
     }
-
+  ],
+  "trials": [
+    {
+      "id": "NCT07456449",
+      "title": "Collagen Peptides and Cellular Aging（端粒長度、發炎、身體組成）",
+      "sponsor": "University of Vienna／GELITA AG（CRI）",
+      "status": "招募中",
+      "period": "2026-04 開始 → 預計 2028-08 完成",
+      "note": "中高齡成人隨機安慰劑對照，主要指標為端粒長度",
+      "url": "https://clinicaltrials.gov/study/NCT07456449"
+    },
+    {
+      "id": "NCT07516756",
+      "title": "Effect of Collagen Peptides on Skin Health（BCP-Skin）",
+      "sponsor": "Collagen Research Institute（中國單一試驗中心）",
+      "status": "已完成，待發表",
+      "period": "66名35–55歲女性 · 8周",
+      "note": "VERISOL® 2.5 g/日 vs 安慰劑",
+      "url": "https://clinicaltrials.gov/study/NCT07516756"
+    },
+    {
+      "id": "NCT06689761",
+      "title": "Specific Collagen Peptides 與跑步經濟性（跟腱／髕腱適應）",
+      "sponsor": "University of Vienna／Collagen Research Institute",
+      "status": "邀請制收案中",
+      "period": "男性約60名 · 12周",
+      "note": "15 g/日，耐力訓練 vs 併行訓練四組",
+      "url": "https://clinicaltrials.gov/study/NCT06689761"
+    }
+  ],
+  "patents": [
+    {
+      "id": "US11673940B2",
+      "title": "Recombinant production of a collagen peptide preparation and use thereof",
+      "status": "已核准（2023-06-13）",
+      "note": "重組表達＋水解製得平均分子量1–7 kDa膠原胜肽；發明人含 Steffen Oesser",
+      "url": "https://patents.google.com/patent/US11673940B2/en"
+    }
   ]
 }

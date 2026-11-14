@@ -1,5 +1,5 @@
 """
-GELITA BCP PubMed 自動更新腳本 v2.0
+GELITA BCP PubMed 自動更新腳本 v2.1
 搜尋策略：品牌名稱 + 核心研究者雙重驗證，確保每篇都是 GELITA BCP® 相關論文
 """
 
@@ -10,7 +10,7 @@ import datetime
 import urllib.request
 import urllib.parse
 
-import google.generativeai as genai
+from google import genai
 
 # ==========================================
 # 1. 初始化
@@ -19,8 +19,9 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise ValueError("找不到 GEMINI_API_KEY 環境變數！")
 
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+# gemini-1.5-flash 已於 2025 年停用，改用新版 google-genai SDK
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+client = genai.Client(api_key=GEMINI_API_KEY)
 
 BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 
@@ -31,7 +32,7 @@ BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 # 官方品牌名稱（出現即 100% 確認為 GELITA 論文）
 GELITA_BRANDS = [
     "VERISOL", "FORTIGEL", "BODYBALANCE", "FORTIBONE",
-    "TENDOFORTE", "PeptENDURE", "PETAGILE"
+    "TENDOFORTE", "PeptENDURE", "PETAGILE", "CURADERM"
 ]
 
 # 核心研究者姓氏（幾乎專屬於 GELITA BCP 研究）
@@ -54,7 +55,7 @@ GELITA_TERMS = [
 # ==========================================
 SEARCH_QUERIES = [
     # 策略一：GELITA 官方品牌名稱（最精準，100% GELITA）
-    "VERISOL OR FORTIGEL OR BODYBALANCE OR FORTIBONE OR TENDOFORTE OR PeptENDURE OR PETAGILE",
+    "VERISOL OR FORTIGEL OR BODYBALANCE OR FORTIBONE OR TENDOFORTE OR PeptENDURE OR PETAGILE OR CURADERM",
 
     # 策略二：核心研究者 + 膠原蛋白胜肽（Oesser/Schunck 幾乎只發表 GELITA 研究）
     "(Oesser S[Author] OR Schunck M[Author] OR Zdzieblik D[Author] OR Jendricke P[Author]) AND collagen peptides",
@@ -165,7 +166,7 @@ def validate_gelita(paper):
 # 6. Gemini 智能分析
 # ==========================================
 def analyze_with_gemini(paper, detected_brand=None):
-    """使用 Gemini 1.5 Flash 分析論文，生成結構化中文摘要"""
+    """使用 Gemini 分析論文，生成結構化中文摘要"""
 
     if detected_brand:
         brand_instruction = f'brand 固定填入 "{detected_brand}"（已從論文直接偵測）。'
@@ -175,7 +176,7 @@ def analyze_with_gemini(paper, detected_brand=None):
             "皮膚/指甲/頭髮→VERISOL，關節/軟骨→FORTIGEL，"
             "肌肉/體脂→BODYBALANCE，骨骼/骨密度→FORTIBONE，"
             "肌腱/韌帶→TENDOFORTE，耐力/跑步→PeptENDURE，"
-            "犬貓/馬→PETAGILE。"
+            "犬貓/馬→PETAGILE，傷口/異位性皮膚/牙齦→CURADERM。"
         )
 
     prompt = f"""你是一位嚴謹的生化與食品科學專家，專門研究 GELITA 膠原蛋白胜肽（BCP®）。
@@ -200,7 +201,7 @@ def analyze_with_gemini(paper, detected_brand=None):
 {{"brand": "...", "tags": ["...", "...", "..."], "summary": "..."}}"""
 
     try:
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
         clean = response.text.replace("```json", "").replace("```", "").strip()
         return json.loads(clean)
     except Exception as e:
@@ -212,7 +213,7 @@ def analyze_with_gemini(paper, detected_brand=None):
 # ==========================================
 def main():
     print("=" * 55)
-    print(f"  GELITA BCP PubMed 更新腳本 v2.0")
+    print(f"  GELITA BCP PubMed 更新腳本 v2.1")
     print(f"  {datetime.datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
     print("=" * 55)
 
