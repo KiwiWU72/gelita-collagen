@@ -20,7 +20,14 @@ if not GEMINI_API_KEY:
     raise ValueError("找不到 GEMINI_API_KEY 環境變數！")
 
 # gemini-1.5-flash 已於 2025 年停用，改用新版 google-genai SDK
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+# 依序嘗試；Google 常停用舊模型，第一個可用的就會被採用
+GEMINI_MODELS = [m for m in [
+    os.environ.get("GEMINI_MODEL"),
+    "gemini-flash-latest",
+    "gemini-3.8-flash",
+    "gemini-3-flash",
+] if m]
+GEMINI_FAILURES = 0
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
@@ -201,10 +208,19 @@ def analyze_with_gemini(paper, detected_brand=None):
 {{"brand": "...", "tags": ["...", "...", "..."], "summary": "..."}}"""
 
     try:
-        response = client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
-        clean = response.text.replace("```json", "").replace("```", "").strip()
-        return json.loads(clean)
+        last_err = None
+        for m in GEMINI_MODELS:
+            try:
+                response = client.models.generate_content(model=m, contents=prompt)
+                clean = response.text.replace("```json", "").replace("```", "").strip()
+                return json.loads(clean)
+            except Exception as e:
+                last_err = e
+                print(f"  → 模型 {m} 失敗：{str(e)[:120]}")
+        raise last_err
     except Exception as e:
+        global GEMINI_FAILURES
+        GEMINI_FAILURES += 1
         print(f"  → Gemini 分析失敗: {e}")
         return None
 
@@ -301,6 +317,10 @@ def main():
         print(f"\n✅ 完成！共新增 {added_count} 篇 GELITA 論文，data.json 已更新。")
     else:
         print("\n📋 今日無新增 GELITA 論文。")
+
+    if GEMINI_FAILURES:
+        # 讓 GitHub Actions 顯示紅色失敗，而不是假裝成功
+        raise SystemExit(f"❌ 有 {GEMINI_FAILURES} 篇 GELITA 論文因 Gemini 失敗未能加入，請檢查模型名稱或 API 金鑰")
 
 
 if __name__ == "__main__":
