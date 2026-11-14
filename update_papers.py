@@ -11,6 +11,7 @@ import urllib.request
 import urllib.parse
 
 from google import genai
+from google.genai import types
 
 # ==========================================
 # 1. 初始化
@@ -28,7 +29,10 @@ GEMINI_MODELS = [m for m in [
     "gemini-3-flash",
 ] if m]
 GEMINI_FAILURES = 0
-client = genai.Client(api_key=GEMINI_API_KEY)
+client = genai.Client(
+    api_key=GEMINI_API_KEY,
+    http_options=types.HttpOptions(timeout=60_000),  # 單次呼叫最多 60 秒，避免卡死
+)
 
 BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 

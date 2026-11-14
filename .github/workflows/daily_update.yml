@@ -8,6 +8,7 @@ on:
 jobs:
   update-papers:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
 
@@ -28,7 +29,7 @@ jobs:
       - name: Run GELITA Update Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python update_papers.py
+        run: python -u update_papers.py
 
       - name: Commit and Push if Updated
         run: |
