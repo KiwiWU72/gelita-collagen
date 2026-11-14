@@ -771,12 +771,19 @@
           <div class="mechanism-text" style="border-color:#bcaaa4;">
             2026 年 5 月於 Vitafoods Europe 發表。GELITA 定位為支持纖維母細胞與角質細胞、促進膠原與 ECM 形成，應用於傷口癒合、異位性傾向肌膚與口腔牙齦保健三條路線。
           </div>
-          <div class="mechanism-text" style="border-color:#bcaaa4;background:rgba(141,110,99,0.08);">
-            ⚠️ 目前本站尚未收錄 CURADERM® 的同行評審人體臨床論文；發表後將自動加入文獻區。
+          <div class="kpi-grid">
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#8d6e63;">0.94g</div>
+              <div class="kpi-label">類固醇藥膏用量（安慰劑 5.60g）<br/><span style="font-size:0.6rem;opacity:0.7;">Proksch et al. 2026 · 12週</span></div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-value" style="color:#8d6e63;">第4週</div>
+              <div class="kpi-label">搔癢顯著改善<br/><span style="font-size:0.6rem;opacity:0.7;">5-D Pruritus Scale</span></div>
+            </div>
           </div>
         </div>
         <div class="card-footer flex items-center justify-between">
-          <div class="dosage-badge">💊 GELITA 建議：5–10g / 日</div>
+          <div class="dosage-badge">💊 臨床劑量 5g / 日（GELITA 建議 5–10g）</div>
           <a href="https://www.gelita.com/sites/default/files/2026-04/folder_curaderm_2026.pdf" target="_blank" rel="noopener" style="font-size:0.72rem;color:#8d6e63;font-weight:600;">官方說明 →</a>
         </div>
       </div>
@@ -834,6 +841,14 @@
           <button class="filter-btn" data-filter="PETAGILE"
             style="font-size:0.72rem;font-weight:600;padding:0.3rem 0.8rem;border-radius:20px;border:1px solid rgba(245,124,0,0.5);color:rgba(255,183,77,0.9);background:transparent;cursor:pointer;transition:all 0.2s;">
             PETAGILE
+          </button>
+          <button class="filter-btn" data-filter="CURADERM"
+            style="font-size:0.72rem;font-weight:600;padding:0.3rem 0.8rem;border-radius:20px;border:1px solid rgba(141,110,99,0.6);color:#d7ccc8;background:transparent;cursor:pointer;transition:all 0.2s;">
+            CURADERM
+          </button>
+          <button class="filter-btn" data-filter="META"
+            style="font-size:0.72rem;font-weight:600;padding:0.3rem 0.8rem;border-radius:20px;border:1px solid rgba(200,149,42,0.6);color:#e0aa44;background:transparent;cursor:pointer;transition:all 0.2s;">
+            統合分析
           </button>
         </div>
         <button onclick="fetchData()" id="refreshBtn"
@@ -951,6 +966,8 @@ const BRAND_COLORS = {
   PeptENDURE:  { bg: 'rgba(74,20,140,0.2)',   border: 'rgba(74,20,140,0.45)', text: '#ce93d8' },
   PETAGILE:    { bg: 'rgba(245,124,0,0.2)',   border: 'rgba(245,124,0,0.45)', text: '#ffb74d' },
   CURADERM:    { bg: 'rgba(141,110,99,0.2)',  border: 'rgba(141,110,99,0.45)', text: '#d7ccc8' },
+  META:        { bg: 'rgba(200,149,42,0.2)',  border: 'rgba(200,149,42,0.45)', text: '#e0aa44' },
+  GELITA:      { bg: 'rgba(255,255,255,0.1)', border: 'rgba(255,255,255,0.3)', text: '#ddd' },
 };
 
 let allPapers = [];

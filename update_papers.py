@@ -152,6 +152,17 @@ def validate_gelita(paper):
     full_text = (paper.get("title", "") + " " + paper.get("abstract", "")).upper()
     authors_str = paper.get("authors", "").upper()
 
+    # 排除更正啟事／勘誤（不是新研究）
+    title_up = paper.get("title", "").upper()
+    if any(w in title_up for w in ("CORRIGENDUM", "ERRATUM", "CORRECTION")):
+        print("  ✗ 更正啟事，跳過")
+        return False, None
+
+    # 必須跟膠原蛋白有關（避免 BodyBalance 運動課程這類同名誤判）
+    if "COLLAGEN" not in full_text and "GELATIN" not in full_text:
+        print("  ✗ 內容與膠原蛋白無關，跳過")
+        return False, None
+
     # 驗證一：品牌名稱（最強憑證）
     for brand in GELITA_BRANDS:
         if brand.upper() in full_text:
