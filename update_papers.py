@@ -214,19 +214,50 @@ def analyze_with_gemini(paper, detected_brand=None):
     try:
         last_err = None
         for m in GEMINI_MODELS:
-            try:
-                response = client.models.generate_content(model=m, contents=prompt)
-                clean = response.text.replace("```json", "").replace("```", "").strip()
-                return json.loads(clean)
-            except Exception as e:
-                last_err = e
-                print(f"  → 模型 {m} 失敗：{str(e)[:120]}")
+            for attempt in range(3):
+                try:
+                    response = client.models.generate_content(model=m, contents=prompt)
+                    clean = response.text.replace("```json", "").replace("```", "").strip()
+                    return json.loads(clean)
+                except Exception as e:
+                    last_err = e
+                    msg = str(e)
+                    print(f"  → 模型 {m} 第{attempt+1}次失敗：{msg[:110]}")
+                    if ("503" in msg or "504" in msg or "429" in msg) and attempt < 2:
+                        time.sleep(20)  # 伺服器忙碌，稍等再試
+                        continue
+                    break
         raise last_err
     except Exception as e:
         global GEMINI_FAILURES
         GEMINI_FAILURES += 1
         print(f"  → Gemini 分析失敗: {e}")
         return None
+
+def abstract_excerpt(text, n=260):
+    """從 PubMed 純文字摘要取一段正文"""
+    body = " ".join(l.strip() for l in text.splitlines() if l.strip())
+    i = body.find("Abstract")
+    body = body[i + 8:] if i >= 0 else body
+    return body[:n].strip() + "…"
+
+
+def retry_pending(db):
+    """補做先前 Gemini 失敗的條目"""
+    fixed = 0
+    for p in db.get("papers", []):
+        if not p.get("pending"):
+            continue
+        print(f"🔁 補摘要：{p['title'][:60]}")
+        ai = analyze_with_gemini({"title": p["title"], "journal": p["journal"], "year": p["year"],
+                                  "authors": p["authors"], "abstract": p.get("abstract", "")},
+                                 p["brand"] if p["brand"] != "GELITA" else None)
+        if ai:
+            p.update(brand=ai.get("brand", p["brand"]), tags=ai.get("tags", p["tags"]),
+                     summary=ai.get("summary", p["summary"]))
+            p.pop("pending", None); p.pop("abstract", None)
+            fixed += 1
+    return fixed
 
 # ==========================================
 # 7. 主程式
@@ -259,6 +290,8 @@ def main():
 
     print(f"現有論文：{len(db.get('papers', []))} 篇，已知 PMID：{len(existing_pmids)} 個\n")
 
+    fixed_count = retry_pending(db)
+
     # 收集候選 PMID
     candidate_pmids = []
     for query in SEARCH_QUERIES:
@@ -290,8 +323,12 @@ def main():
         # Gemini 分析
         print("  Gemini 分析中...")
         ai_data = analyze_with_gemini(paper, detected_brand)
+        pending = False
         if not ai_data:
-            continue
+            # Gemini 失敗也先收錄，之後每次執行再補中文摘要
+            pending = True
+            ai_data = {"brand": detected_brand or "GELITA", "tags": ["待AI摘要"],
+                       "summary": "（中文摘要待補）" + abstract_excerpt(paper["abstract"])}
 
         # 組合新條目
         new_entry = {
@@ -305,6 +342,9 @@ def main():
             "summary": ai_data.get("summary", ""),
             "pubmedUrl": paper["pubmedUrl"]
         }
+        if pending:
+            new_entry["pending"] = True
+            new_entry["abstract"] = paper["abstract"][:3000]
 
         db["papers"].insert(0, new_entry)
         existing_pmids.add(pmid)
@@ -314,7 +354,7 @@ def main():
         time.sleep(1)
 
     # 寫回 data.json
-    if added_count > 0:
+    if added_count > 0 or fixed_count > 0:
         db["lastUpdated"] = datetime.datetime.now().strftime("%Y-%m-%d")
         with open("data.json", "w", encoding="utf-8") as f:
             json.dump(db, f, ensure_ascii=False, indent=2)
@@ -323,8 +363,8 @@ def main():
         print("\n📋 今日無新增 GELITA 論文。")
 
     if GEMINI_FAILURES:
-        # 讓 GitHub Actions 顯示紅色失敗，而不是假裝成功
-        raise SystemExit(f"❌ 有 {GEMINI_FAILURES} 篇 GELITA 論文因 Gemini 失敗未能加入，請檢查模型名稱或 API 金鑰")
+        # 論文已先收錄；這裡只在 Actions 留下警示
+        print(f"::warning::有 {GEMINI_FAILURES} 次 Gemini 摘要失敗，相關論文標記為『待AI摘要』，下次執行會自動補做")
 
 
 if __name__ == "__main__":
